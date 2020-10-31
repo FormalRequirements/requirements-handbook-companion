@@ -1,0 +1,4 @@
+= Requirements Handbook Companion
+
+This repository constitutes the companion of the Requiremenst Handbook.
+
