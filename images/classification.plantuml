@@ -1,0 +1,112 @@
+@startuml
+
+'-----------------------------------
+' UML concepts illustrated
+' JMB 2020
+'-----------------------------------
+
+' Default settings
+'-----------------------------------
+' left to right direction 'does not work for sequence diagrams :-(
+hide circle
+hide empty members
+hide methods	
+
+' Colors & Fonts
+'-----------------------------------
+'Colors => see http://plantuml.com/color
+'skinparam monochrome true
+'skinparam monochrome reverse
+'skinparam handwritten true
+skinparam package {
+	BackgroundColor empty
+	BorderColor DarkSlateGray
+	ArrowColor Black
+	FontColor Black
+	FontSize 12
+	FontName TrebuchetMS
+}
+skinparam roundcorner 10
+
+skinparam class {
+	BackgroundColor AliceBlue
+	BorderColor DarkSlateGray
+	ArrowColor Black
+	FontColor Black
+	FontSize 12
+	FontName TrebuchetMS
+}
+skinparam arrow {
+    MessageAlign center
+}
+
+' PlantUML stdlib now includes Icon-Font Sprites! See https://github.com/tupadr3/plantuml-icon-font-sprites
+' see also https://tupadr3.de/plantuml-icon-font-sprites/
+!define ICONURL https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/v1.0.0
+
+'!include ../Defs.txt
+
+!includeurl ICONURL/common.puml
+!includeurl ICONURL/font-awesome/server.puml
+!includeurl ICONURL/font-awesome/database.puml
+
+title The four books of requirements
+
+' Attribute and name values (for translation purpose).
+'-----------------------------------
+!define RECT "Rectangle"
+!define SQUARE "Carré"
+'!define RECT "Rectangle"
+'!define SQUARE "Square"
+
+' Usefull functions
+'-----------------------------------
+!define objet(nom,type) class "<u>nom : type"
+
+
+package P as "Project (P)" {
+    class p1 as "P.1 Responsibilities" 
+    class p2 as "P.2 Imposed technical choices" 
+    class p3 as "P.3 Personnel characteristics and constraints"
+    class p4 as "P.4 List of tasks"
+    class p5 as "P.5 Schedule, milestones and deliverables"
+    class p6 as "P.6 Individual task descriptions"
+    class p7 as "P.7 Risks and mitigation analysis"
+    'p1 -[hidden]-> p2
+    'p2 -[hidden]-> p3
+}
+
+package G as "Goals (G)" {
+    class g1 as "G.1 Overall context and goals" 
+    class g2 as "G.2 Current situation" 
+    class g3 as "G.3 Expected benefits" 
+    class g4 as "G.4 System overview" 
+    class g5 as "G.5 Limitations and exclusions" 
+    class g6 as "G.6 Stakeholders" 
+    class g7 as "G.7 Requirements sources" 
+}
+
+package E as "Environment (E)" {
+    class e1 as "E.1 Glossary" 
+    class e2 as "E.2 Components" 
+    class e3 as "E.3 Constraints" 
+    class e4 as "E.4 Assumptions" 
+    class e5 as "E.5 Effects" 
+    class e6 as "E.6 Invariants" 
+}
+
+package S as "System (S)" {
+    class s1 as "S.1 List of components" 
+    class s2 as "S.2 Provided functionality" 
+    class s3 as "S.3 Provided interfaces" 
+    class s4 as "S.4 Example scenarios" 
+    class s5 as "S.5 Prioritization" 
+}
+
+
+P -[hidden]> G
+P -[hidden]-> E
+E -[hidden]> S 
+G -[hidden]-> S
+
+@enduml
