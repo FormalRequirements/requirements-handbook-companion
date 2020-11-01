@@ -21,16 +21,21 @@ endif::[]
 
 WARNING: Work in progress!
 
+//-------------------------------------
 == Context
 
 This repository constitutes the companion of the book: link:{hb-pdf}[{hb-title}].
 It serves has the basis for the future Handbook's site: {hb-url}
 
+//-------------------------------------
 == Overview of the method
+
+=== Overall structure
 
 .The four books of requirements
 image::classification.svg[]
 
+//-------------------------------------
 == Usefull links
 
 - The draft of the Method Book: {hb-pdf}[PDF]
