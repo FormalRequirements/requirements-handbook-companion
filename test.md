@@ -1,9 +1,4 @@
-= Requirements Handbook Companion
-//------------------------- configuration
-:imagesdir: images
-:icons: font
-:toc:
-:numbered:
+# Requirements Handbook Companion
 
 :hb-pdf: http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf
 :hb-title: Handbook of requirements and business analysis
