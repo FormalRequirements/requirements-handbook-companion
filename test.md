@@ -15,9 +15,6 @@ ifdef::env-github[]
 endif::[]
 //-------------------------------------
 
-//------------------------------------ Badges --------
-image:https://img.shields.io/badge/License-MIT-yellow.svg[License: MIT, link="https://opensource.org/licenses/MIT"]
-//------------------------------------ Badges --------
 
 WARNING: Work in progress!
 
