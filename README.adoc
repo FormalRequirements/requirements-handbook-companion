@@ -1,4 +1,5 @@
 = Requirements Handbook Companion
+//------------------------- configuration
 :imagesdir: images
 :icons: font
 :toc:
@@ -18,6 +19,10 @@ ifdef::env-github[]
 :warning-caption: :warning:
 endif::[]
 //-------------------------------------
+
+//------------------------------------ Badges --------
+image:https://img.shields.io/badge/License-MIT-yellow.svg[License: MIT, linkl="https://opensource.org/licenses/MIT"]
+//------------------------------------ Badges --------
 
 WARNING: Work in progress!
 
