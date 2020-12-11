@@ -1,0 +1,7 @@
+{
+    "ignorePatterns": [
+        { "pattern": "^http://requirements-handbook.org/" },
+        { "pattern": "^https://www.google" }
+    ]
+
+}
