@@ -24,6 +24,6 @@ $(CHECK_RES): *.adoc
 	@echo "========================================"
 	@echo "==> checking the fix "
 	asciidoc-link-check *.adoc -c $(EXCLUDE_URLS) > $(CHECK_RES)
-
+	markdown-link-check *.md -c $(EXCLUDE_URLS) >> $(CHECK_RES)
 clean:
 	rm *.html

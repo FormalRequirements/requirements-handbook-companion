@@ -1,7 +1,0 @@
-{
-    "ignorePatterns": [
-      {
-        "pattern": "^http://requirements-handbook.org/"
-      }
-    ]
-  }
