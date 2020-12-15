@@ -5,6 +5,7 @@
 :toc:
 :numbered:
 
+:method: _Method_
 :hb-pdf: http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf
 :hb-title: Handbook of requirements and business analysis
 :hb-url: http://requirements-handbook.org/
@@ -48,17 +49,46 @@ image::classification.svg[]
 .Reference links
 image::links.svg[]
 
+=== The lifecycle model
+
+.The lifecycle model
+image::lifecycle.svg[]
+
+:numbered!:
+
+== Appendices
+
+[appendices]
 //-------------------------------------
-== Useful links
+=== Useful links
 
 - The draft of the Method Book: {hb-pdf}[PDF]
 - The draft of the Companion Book: {cb-url}[Google Doc]
 
-ifdef::pdf-backend[]
-//-------------------------------------
-== Checks results and issues
 
-=== URLs
+[appendices]
+//-------------------------------------
+=== Specific implementations
+
+Here is a list of potential mappings between the {method}:
+
+SysML:: 
+- Each PEGS could be a package
+- Requirements could be stereotyped (e.g., `<<Goals>>` or `<<System>>`)
+
+FORM-L::
+- Thuy could be interested in providing a template for the {method} in Form-L
+
+RSML::
+- Florian could integrate the {method} in the editor
+
+
+ifdef::pdf-backend[]
+[appendices]
+//-------------------------------------
+=== Checks results and issues
+
+==== URLs
 
 .Checking URLs result (last update: {localdate}):
 [source,shell]
