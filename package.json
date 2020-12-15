@@ -1,0 +1,8 @@
+{
+  "name": "multiRequirements",
+  "version": "1.0.0",
+  "dependencies": {
+    "asciidoc-link-check": "~1.0.0",
+    "markdown-link-check": "~1.0.0"
+  }
+}
