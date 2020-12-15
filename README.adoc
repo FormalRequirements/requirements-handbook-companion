@@ -20,10 +20,12 @@ ifdef::env-github[]
 endif::[]
 //-------------------------------------
 
+ifndef::pdf-backend[]
 //------------------------------------ Badges --------
 image:https://github.com/FormalRequirements/requirements-handbook/workflows/Check%20Markdown%20links/badge.svg[Check Markdown links]
 image:https://img.shields.io/badge/License-MIT-yellow.svg[License: MIT, link="https://opensource.org/licenses/MIT"]
 //------------------------------------ Badges --------
+endif::[]
 
 WARNING: Work in progress!
 
@@ -41,6 +43,11 @@ It serves has the basis for the future Handbook's site: {hb-url}
 .The four books of requirements
 image::classification.svg[]
 
+=== Links between PEGS
+
+.Reference links
+image::links.svg[]
+
 //-------------------------------------
 == Useful links
 
@@ -51,8 +58,11 @@ ifdef::pdf-backend[]
 //-------------------------------------
 == Checks results and issues
 
-.Checking URLs result:
+=== URLs
+
+.Checking URLs result (last update: {localdate}):
+[source,shell]
 --
-asciidoc-link-check README.adoc -c .ignore_links.json
+include::check-results.txt[]
 --
 endif::[]
