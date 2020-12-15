@@ -1,7 +1,7 @@
 #-----------------------------------------------------
 # Some usefull instructions...
 #
-EXCLUDE_URLS 	= .ignore_links.json
+EXCLUDE_URLS 	= config.json
 CHECK_RES 		= check-results.txt
 #-----------------------------------------------------
 
@@ -25,5 +25,6 @@ $(CHECK_RES): *.adoc
 	@echo "==> checking the fix "
 	asciidoc-link-check *.adoc -c $(EXCLUDE_URLS) > $(CHECK_RES)
 	markdown-link-check *.md -c $(EXCLUDE_URLS) >> $(CHECK_RES)
-clean:
+
+lean:
 	rm *.html
