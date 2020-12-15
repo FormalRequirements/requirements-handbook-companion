@@ -1,0 +1,39 @@
+@startuml
+'-----------------------------------
+' Requirements Method Illustrated
+' JMB 2020
+'-----------------------------------
+
+' Default settings
+'-----------------------------------
+!include config.cfg
+
+'title References between PEGS
+
+' Attribute and name values (for translation purpose).
+'-----------------------------------
+
+'Bertrand's colors for PEGS
+!define GREEN TECHNOLOGY
+!define BLUE Blue
+!define YELLOW Yellow
+!define BLACK Black
+
+' together {
+' class G as "Define goals" <<Goals>> 
+' class E as "Analyse\n environment" <<Environment>>
+' }
+' class P as "Project" <<Project>>
+' class S as "System" <<System>>
+
+(*) --> ===B1===
+--> "Parallel Activity 1" <<Goals>> 
+--> ===B2===
+
+===B1=== --> "Parallel Activity 2"
+--> ===B2===
+
+--> (*)
+
+
+@enduml
