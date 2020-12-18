@@ -1,0 +1,49 @@
+@startuml Lifecycle
+'-----------------------------------
+' Requirements Method Illustrated
+' JMB 2020
+'-----------------------------------
+
+' Default settings
+'-----------------------------------
+!include config.cfg
+
+'title References between PEGS
+
+' Attribute and name values (for translation purpose).
+'-----------------------------------
+
+
+'top to bottom direction
+'skinparam linetype polyline
+'skinparam linetype ortho
+
+
+start
+
+skinparam conditionStyle diamond
+skinparam ConditionEndStyle hline
+
+repeat
+    partition "Definition step" {
+        fork
+        skinparam activity {
+            FontColor RED
+        }
+        <<Goals>>:<&target> Define goals;  
+        <<Project>>: Project;
+        fork again
+        <<Environment>>:Analyse environment;
+        <<System>>:<&cog>System;
+        end fork
+    }
+repeat while (<&circle-check> Verify)
+    
+- <&list> Features
+- <&bug> Defects
+- <&warning> Risks
+- <&credit-card> Debts
+- Icons: <&dollar> / <&thumbs>
+stop
+
+@enduml

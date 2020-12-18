@@ -14,8 +14,9 @@
 '-----------------------------------
 
 
-top to bottom direction
-
+'top to bottom direction
+skinparam linetype polyline
+'skinparam linetype ortho
 
 '-----------------------------------
 partition "Definition step" {
@@ -31,10 +32,10 @@ partition "Definition step" {
     ===DefinitionStep2=== --> "Define clusters" <<System>>
     --> ===Verify1===
     --> "Verify" as v1 <<Verify>>
-    ' if "" then
-      -[#red]->[OK] "Select clusters" as s <<System>>
-    ' else
-    '  -[#red]->[NOK] ===DefinitionStep1===
+    '  if "" then
+    -[#red]->[OK] "Select clusters" as s <<System>>
+    '  else
+    '   -[#red]->[NOK] ===DefinitionStep1===
     ' endif
 }
 
@@ -55,7 +56,7 @@ partition "Implementation step" {
 
 (*) --> ===DefinitionStep1===
 
-'v2 -[#red]-> ===DefinitionStep1===
+v2 -[#red]-> ===DefinitionStep1===
 'v1 -[#red]-> ===DefinitionStep1===
 '--> (*)
 

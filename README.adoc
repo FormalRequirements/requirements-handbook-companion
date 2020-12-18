@@ -54,11 +54,25 @@ image::links.svg[]
 .The lifecycle model
 image::lifecycle.svg[]
 
+=== Steps details
+
+==== Selection of the clusters
+
+Advice would be to start with critical parts, after may be a little GUI step.
+
+
 :numbered!:
+
+== References
+
+- Sommerville & Sawyer
+- Axel van Lansweerde
+- Klaus Pohl
+
 
 == Appendices
 
-[appendices]
+[appendix]
 //-------------------------------------
 === Useful links
 
@@ -66,7 +80,7 @@ image::lifecycle.svg[]
 - The draft of the Companion Book: {cb-url}[Google Doc]
 
 
-[appendices]
+[appendix]
 //-------------------------------------
 === Specific implementations
 
