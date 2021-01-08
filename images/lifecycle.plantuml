@@ -1,0 +1,63 @@
+@startuml lifecycle
+'-----------------------------------
+' Requirements Method Illustrated
+' JMB 2020
+'-----------------------------------
+
+' Default settings
+'-----------------------------------
+!include config.cfg
+
+'title References between PEGS
+
+' Attribute and name values (for translation purpose).
+'-----------------------------------
+
+
+top to bottom direction
+
+
+'-----------------------------------
+partition "Definition step" {
+
+    ===DefinitionStep1=== --> "Define goals\n" <<Goals>> 
+    --> ===DefinitionStep2===
+
+    ===DefinitionStep1=== --> "Analyse \n environment" <<Environment>>
+    --> ===DefinitionStep2===
+    --> "Plan project" <<Project>>
+    --> ===Verify1===
+
+    ===DefinitionStep2=== --> "Define clusters" <<System>>
+    --> ===Verify1===
+    --> "Verify" as v1 <<Verify>>
+    ' if "" then
+      -[#red]->[OK] "Select clusters" as s <<System>>
+    ' else
+    '  -[#red]->[NOK] ===DefinitionStep1===
+    ' endif
+}
+
+'-----------------------------------
+partition "Implementation step" {
+    s -> ===B4===
+    --> "<img:cluster.png{scale=0.1}>" as c1
+    --> ===B5===
+    ===B4=== --> "<img:cluster.png{scale=0.1}>" as c2
+    --> ===B5===
+    ===B4=== --> "<img:cluster.png{scale=0.1}>" as c3 
+    
+    --> ===B5===
+    --> "Verify" as v2 <<Verify>>
+}
+
+'-----------------------------------
+
+(*) --> ===DefinitionStep1===
+
+'v2 -[#red]-> ===DefinitionStep1===
+'v1 -[#red]-> ===DefinitionStep1===
+'--> (*)
+
+
+@enduml

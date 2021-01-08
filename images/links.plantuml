@@ -1,0 +1,27 @@
+@startuml links
+'-----------------------------------
+' Requirements Method Illustrated
+' JMB 2020
+'-----------------------------------
+
+' Default settings
+'-----------------------------------
+!include config.cfg
+
+together {
+class P as "Project" <<Project>>
+class E as "Environment" <<Environment>>
+}
+together {
+class G as "Goals" <<Goals>> 
+class S as "System" <<System>>
+}
+
+P .> E 
+E <. G
+P .> S
+P ..> G
+E <.. S
+G <. S : May reference
+
+@enduml

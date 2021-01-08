@@ -1,0 +1,52 @@
+@startuml classification
+'-----------------------------------
+' Requirements Method Illustrated
+' JMB 2020
+'-----------------------------------
+
+!include config.cfg
+
+package P as "Project (P)" {
+    class p1 as "P.1 Responsibilities" <<Project>>
+    class p2 as "P.2 Imposed technical choices" <<Project>>
+    class p3 as "P.3 Personnel characteristics and constraints" <<Project>>
+    class p4 as "P.4 List of tasks" <<Project>>
+    class p5 as "P.5 Schedule, milestones and deliverables" <<Project>>
+    class p6 as "P.6 Individual task descriptions" <<Project>>
+    class p7 as "P.7 Risks and mitigation analysis" <<Project>>
+    'p1 -[hidden]-> p2
+    'p2 -[hidden]-> p3
+}   
+
+package E as "Environment (E)" {
+    class e1 as "E.1 Glossary"  <<Environment>>
+    class e2 as "E.2 Components" <<Environment>>
+    class e3 as "E.3 Constraints" <<Environment>>
+    class e4 as "E.4 Assumptions" <<Environment>>
+    class e5 as "E.5 Effects" <<Environment>>
+    class e6 as "E.6 Invariants" <<Environment>>
+}
+
+package G as "Goals (G)" {
+    class g1 as "G.1 Overall context and goals" <<Goals>>
+    class g2 as "G.2 Current situation"  <<Goals>>
+    class g3 as "G.3 Expected benefits"  <<Goals>>
+    class g4 as "G.4 System overview"  <<Goals>>
+    class g5 as "G.5 Limitations and exclusions" <<Goals>> 
+    class g6 as "G.6 Stakeholders"  <<Goals>>
+    class g7 as "G.7 Requirements sources"  <<Goals>>
+}
+
+package S as "System (S)" {
+    class s1 as "S.1 List of components" <<System>>
+    class s2 as "S.2 Provided functionality" <<System>>
+    class s3 as "S.3 Provided interfaces" <<System>>
+    class s4 as "S.4 Example scenarios" <<System>>
+    class s5 as "S.5 Prioritization" <<System>>
+}
+
+' -------- For presentation/consistency purposes PEGS
+P -[hidden]> E
+G -[hidden]-> S
+
+@enduml
