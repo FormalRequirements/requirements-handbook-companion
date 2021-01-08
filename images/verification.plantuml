@@ -1,0 +1,30 @@
+@startuml verification
+'-----------------------------------
+' Requirements Method Illustrated
+' JMB 2020
+'-----------------------------------
+
+' Default settings
+'-----------------------------------
+!include config.cfg
+
+together {
+class P as "Project" <<Project>>
+class E as "Environment" <<Environment>>
+}
+together {
+class G as "Goals" <<Goals>> 
+class S as "System" <<System>>
+}
+
+' -------- For presentation/consistency purposes PEGS
+P -[hidden]> E
+P -[hidden]-> G
+
+P --> S 
+G --> E
+G <- S : Must satisfy
+E <-- S
+
+
+@enduml
