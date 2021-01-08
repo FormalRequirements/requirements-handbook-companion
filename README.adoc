@@ -59,8 +59,30 @@ image::verification.svg[]
 .The lifecycle model
 image::lifecycle.svg[]
 
-:numbered!:
 
+== Case studies
+
+We illustrate the use of {method} through the following case studies:
+
+WARNING: Work in progress
+
+. The Roborace
+. A more information-system-oriented example
+. This Companion Book 
+
+
+== Book templates
+
+We provide in this companion web site a set of Book templates to help you apply {method} and organize your requirements.
+Here is the list of the available templates (feel free to contribute by submitting your own templates):
+
+WARNING: Work in progress
+
+. DOCX
+. LaTeX
+. GitHub
+
+:numbered!:
 == Appendices
 
 [appendix]
