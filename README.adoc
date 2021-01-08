@@ -58,7 +58,7 @@ image::lifecycle.svg[]
 
 == Appendices
 
-[appendices]
+[appendix]
 //-------------------------------------
 === Useful links
 
@@ -66,7 +66,7 @@ image::lifecycle.svg[]
 - The draft of the Companion Book: {cb-url}[Google Doc]
 
 
-[appendices]
+[appendix]
 //-------------------------------------
 === Specific implementations
 
@@ -84,15 +84,26 @@ RSML::
 
 
 ifdef::pdf-backend[]
-[appendices]
+[appendix]
 //-------------------------------------
 === Checks results and issues
 
-==== URLs
+==== URLs 
 
 .Checking URLs result (last update: {localdate}):
 [source,shell]
 --
 include::check-results.txt[]
 --
+endif::[]
+ifndef::pdf-backend[]
+[appendix]
+//-------------------------------------
+=== Checks results and issues
+
+==== URLs image:https://github.com/FormalRequirements/requirements-handbook/workflows/Check%20Markdown%20links/badge.svg[Check Markdown links]
+
+Checking URLs result (last update: {localdate}):
+
+See the following file: link:check-results.txt[]
 endif::[]

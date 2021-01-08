@@ -1,4 +1,4 @@
-@startuml
+@startuml links
 '-----------------------------------
 ' Requirements Method Illustrated
 ' JMB 2020
@@ -8,25 +8,20 @@
 '-----------------------------------
 !include config.cfg
 
-'title References between PEGS
-
-' Attribute and name values (for translation purpose).
-'-----------------------------------
-
-'Bertrand's colors for PEGS
-
 together {
-class E as "Environment" <<Environment>>
-class G as "Goals" <<Goals>> 
-}
 class P as "Project" <<Project>>
+class E as "Environment" <<Environment>>
+}
+together {
+class G as "Goals" <<Goals>> 
 class S as "System" <<System>>
+}
 
-E <.. P
+P .> E 
 E <. G
 P .> S
 P ..> G
 E <.. S
-G <.. S : May reference
+G <. S : May reference
 
 @enduml
