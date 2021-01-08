@@ -37,7 +37,7 @@ This repository constitutes the companion of the book: link:{hb-pdf}[{hb-title}]
 It serves has the basis for the future Handbook's site: {hb-url}
 
 //-------------------------------------
-== Overview of the method
+== Overview of the method image:pegs.svg[width=10%,pdfwidth=80%]
 
 === Overall structure
 
@@ -59,9 +59,19 @@ image::lifecycle.svg[]
 
 === Steps details
 
-==== Selection of the clusters
+==== Goals & Environment
 
-Advice would be to start with critical parts, after may be a little GUI step.
+==== Project & System
+
+==== Verify (definition step)
+
+==== Select clusters
+
+==== Cluster implementation
+
+==== Verify (implementation step)
+
+Advice would be to start with critical parts after maybe a little GUI step.
 
 
 :numbered!:
@@ -69,7 +79,7 @@ Advice would be to start with critical parts, after may be a little GUI step.
 == References
 
 - Sommerville & Sawyer
-- Axel van Lansweerde
+- Axel van Lamsweerde
 - Klaus Pohl
 
 :numbered!:
