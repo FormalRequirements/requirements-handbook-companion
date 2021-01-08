@@ -44,12 +44,12 @@ It serves has the basis for the future Handbook's site: {hb-url}
 .The four books of requirements
 image::classification.svg[]
 
-=== Links between PEGS
+=== Links between the four PEGS
 
 .Reference links
 image::links.svg[]
 
-.Verification obligation between the four PEGS
+.Verification obligations 
 image::verification.svg[]
 
 === The lifecycle model
