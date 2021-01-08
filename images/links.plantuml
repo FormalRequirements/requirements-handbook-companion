@@ -14,10 +14,6 @@
 '-----------------------------------
 
 'Bertrand's colors for PEGS
-!define GREEN TECHNOLOGY
-!define BLUE Blue
-!define YELLOW Yellow
-!define BLACK Black
 
 together {
 class E as "Environment" <<Environment>>
