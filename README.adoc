@@ -39,7 +39,7 @@ It serves has the basis for the future Handbook's site: {hb-url}
 //-------------------------------------
 == Overview of the method 
 
-image:pegs.svg[]
+image:pegs.png[]
 
 === Overall structure
 
