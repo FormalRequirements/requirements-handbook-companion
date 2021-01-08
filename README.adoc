@@ -37,7 +37,9 @@ This repository constitutes the companion of the book: link:{hb-pdf}[{hb-title}]
 It serves has the basis for the future Handbook's site: {hb-url}
 
 //-------------------------------------
-== Overview of the method image:pegs.svg[width=10%,pdfwidth=80%]
+== Overview of the method 
+
+image:pegs.png[]
 
 === Overall structure
 
