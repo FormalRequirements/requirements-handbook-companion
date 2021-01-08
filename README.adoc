@@ -44,10 +44,13 @@ It serves has the basis for the future Handbook's site: {hb-url}
 .The four books of requirements
 image::classification.svg[]
 
-=== Links between PEGS
+=== Links between the four PEGS
 
 .Reference links
 image::links.svg[]
+
+.Verification obligations 
+image::verification.svg[]
 
 === The lifecycle model
 
@@ -69,6 +72,7 @@ Advice would be to start with critical parts, after may be a little GUI step.
 - Axel van Lansweerde
 - Klaus Pohl
 
+:numbered!:
 
 == Appendices
 
@@ -98,15 +102,26 @@ RSML::
 
 
 ifdef::pdf-backend[]
-[appendices]
+[appendix]
 //-------------------------------------
 === Checks results and issues
 
-==== URLs
+==== URLs 
 
 .Checking URLs result (last update: {localdate}):
 [source,shell]
 --
 include::check-results.txt[]
 --
+endif::[]
+ifndef::pdf-backend[]
+[appendix]
+//-------------------------------------
+=== Checks results and issues
+
+==== URLs image:https://github.com/FormalRequirements/requirements-handbook/workflows/Check%20Markdown%20links/badge.svg[Check Markdown links]
+
+Checking URLs result (last update: {localdate}):
+
+See the following file: link:check-results.txt[]
 endif::[]
