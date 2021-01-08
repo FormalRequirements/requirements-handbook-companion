@@ -49,6 +49,9 @@ image::classification.svg[]
 .Reference links
 image::links.svg[]
 
+.Verification obligation between the four PEGS
+image::verification.svg[]
+
 === The lifecycle model
 
 .The lifecycle model

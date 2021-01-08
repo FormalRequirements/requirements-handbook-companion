@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="133px" preserveAspectRatio="none" style="width:215px;height:133px;" version="1.1" viewBox="0 0 215 133" width="215px" zoomAndPan="magnify"><defs><filter height="300%" id="fa16iycfszcak" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[3b33aac52bf85bcbfceea1b1d7f3c296]
+class P--><rect codeLine="11" fill="#000000" filter="url(#fa16iycfszcak)" height="23.9336" id="P" rx="5" ry="5" style="stroke: #000000; stroke-width: 1.5;" width="46" x="16.5" y="7"/><text fill="#FFFFFF" font-family="TrebuchetMS" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="40" x="19.5" y="23.2676">Project</text><!--MD5=[54d0f7ca6f9898010b87b67e67e7a5e0]
+class E--><rect codeLine="12" fill="#FFFF00" filter="url(#fa16iycfszcak)" height="23.9336" id="E" rx="5" ry="5" style="stroke: #000000; stroke-width: 1.5;" width="75" x="98" y="7"/><text fill="#DC143C" font-family="TrebuchetMS" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="69" x="101" y="23.2676">Environment</text><!--MD5=[4cac391c179f8787f20d7dddb517ad5a]
+class G--><rect codeLine="15" fill="#C9FFC9" filter="url(#fa16iycfszcak)" height="23.9336" id="G" rx="5" ry="5" style="stroke: #000000; stroke-width: 1.5;" width="35" x="7" y="96"/><text fill="#DC143C" font-family="TrebuchetMS" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="29" x="10" y="112.2676">Goals</text><!--MD5=[8d919f42174a8592853f0e252dac1126]
+class S--><rect codeLine="16" fill="#0000FF" filter="url(#fa16iycfszcak)" height="23.9336" id="S" rx="5" ry="5" style="stroke: #000000; stroke-width: 1.5;" width="45" x="156" y="96"/><text fill="#FFFF00" font-family="TrebuchetMS" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="39" x="159" y="112.2676">System</text><!--MD5=[f884a522799d1c1af466ab1b000ae896]
+link P to E--><!--MD5=[8d41bd9a74cf1a92bfb7193615360f5f]
+link P to G--><!--MD5=[c59cac793282cfdfc9d13a807a8fe753]
+link P to S--><path codeLine="23" d="M51.14,31.14 C59.06,38.41 69.98,47.84 80.5,55 C103.21,70.44 131.02,84.81 151.2,94.52 " fill="none" id="P-to-S" style="stroke: #000000; stroke-width: 1.0;"/><polygon fill="#000000" points="155.91,96.76,149.5233,89.2626,151.4013,94.5987,146.0652,96.4766,155.91,96.76" style="stroke: #000000; stroke-width: 1.0;"/><!--MD5=[280a72116bfc8c8f3265231337c59d6d]
+link G to E--><path codeLine="24" d="M38.79,95.8 C58.83,80.09 95.28,51.53 117.25,34.3 " fill="none" id="G-to-E" style="stroke: #000000; stroke-width: 1.0;"/><polygon fill="#000000" points="121.44,31.02,111.8915,33.4336,117.5079,34.1085,116.833,39.7249,121.44,31.02" style="stroke: #000000; stroke-width: 1.0;"/><!--MD5=[842eaf7087929c9967247ae4f2f4f03f]
+reverse link G to S--><path codeLine="25" d="M47.36,108 C76.54,108 126.72,108 155.82,108 " fill="none" id="G-backto-S" style="stroke: #000000; stroke-width: 1.0;"/><polygon fill="#000000" points="42.17,108,51.17,112,47.17,108,51.17,104,42.17,108" style="stroke: #000000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="77" x="60.5" y="101.5684">Must satisfy</text><!--MD5=[4a701aae4b286a10d9c5dd66119b7aab]
+reverse link E to S--><path codeLine="26" d="M143.22,35.62 C151.78,52.95 165.39,80.48 172.96,95.8 " fill="none" id="E-backto-S" style="stroke: #000000; stroke-width: 1.0;"/><polygon fill="#000000" points="140.95,31.02,141.3469,40.8609,143.1632,35.5035,148.5205,37.3197,140.95,31.02" style="stroke: #000000; stroke-width: 1.0;"/><!--MD5=[136000ce2e2fee7c0c27827955909978]
+@startuml verification
+'- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+' Requirements Method Illustrated
+' JMB 2020
+'- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+' Default settings
+'- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+!include config.cfg
+
+together {
+class P as "Project" <<Project>>
+class E as "Environment" <<Environment>>
+}
+together {
+class G as "Goals" <<Goals>> 
+class S as "System" <<System>>
+}
+
+' - - - - - - - - For presentation/consistency purposes PEGS
+P -[hidden]> E
+P -[hidden]-> G
+
+P - -> S 
+G - -> E
+G <- S : Must satisfy
+E <- - S
+
+
+@enduml
+
+@startuml verification
+
+hide circle
+hide empty members
+hide methods
+hide stereotype	
+
+
+
+skinparam package {
+	BackgroundColor empty
+    BackgroundColor<<Goals>> TECHNOLOGY
+    BackgroundColor<<System>> Blue
+    BackgroundColor<<Project>> Black
+    BackgroundColor<<Environment>> Yellow
+
+	BorderColor DarkSlateGray
+	ArrowColor Black
+	FontColor Black
+	FontSize 12
+	FontName TrebuchetMS
+}
+skinparam roundcorner 10
+
+skinparam class {
+	BackgroundColor White
+    BackgroundColor<<Goals>> TECHNOLOGY
+    BackgroundColor<<System>> Blue
+    BackgroundColor<<Project>> Black
+    BackgroundColor<<Environment>> Yellow
+	FontColor<<Goals>> Crimson
+    BorderColor Black
+	ArrowColor Black
+	ArrowColor<<referTo>> Crimson
+	FontColor<<Environment>> Crimson
+	FontColor<<Project>> White
+	FontColor<<System>> Yellow
+	FontSize 12
+	FontName TrebuchetMS
+}
+
+skinparam activity {
+	BackgroundColor White
+    BackgroundColor<<Goals>> TECHNOLOGY
+    BackgroundColor<<System>> Blue
+    BackgroundColor<<Project>> Black
+    BackgroundColor<<Environment>> Yellow
+    BackgroundColor<<Verify>> Crimson
+    BackgroundColor<<Empty>> White
+    BorderColor<<Empty>> White
+    BorderColor Black
+	ArrowColor Black
+	ArrowColor<<referTo>> Crimson
+	FontColor<<Environment>> Crimson
+	FontColor<<Goals>> Crimson
+	FontColor<<Project>> White
+	FontColor<<System>> Yellow
+	FontColor<<Verify>> Yellow
+	FontSize 12
+	FontName TrebuchetMS
+}
+
+skinparam arrow {
+    MessageAlign center
+}
+
+
+
+
+together {
+class P as "Project" <<Project>>
+class E as "Environment" <<Environment>>
+}
+together {
+class G as "Goals" <<Goals>> 
+class S as "System" <<System>>
+}
+
+P -[hidden]> E
+P -[hidden]-> G
+
+P - -> S 
+G - -> E
+G <- S : Must satisfy
+E <- - S
+
+
+@enduml
+
+PlantUML version 1.2020.19(Mon Oct 12 17:10:01 CEST 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: fr
+Country: FR
+--></g></svg>
