@@ -80,7 +80,7 @@ WARNING: Work in progress
 
 . DOCX
 . LaTeX
-. GitHub
+. link:githubImpl.adoc[GitHub] 
 
 :numbered!:
 == Appendices
