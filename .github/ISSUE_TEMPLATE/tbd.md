@@ -1,6 +1,6 @@
 ---
 name: TBD issue
-about: Use this template for feeling TBD's information.
+about: Use this template to fill TBD's information.
 title: "TBD: [SHORT DESCRIPTION]"
 labels: TBD
 ---
