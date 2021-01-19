@@ -6,6 +6,8 @@ FILE: README.adoc
 [~] https://github.com/FormalRequirements/requirements-handbook/workflows/Check%20Markdown%20links/badge.svg
 [✓] https://img.shields.io/badge/License-MIT-yellow.svg
 [✓] https://opensource.org/licenses/MIT
+[✓] https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod
+[✓] https://gitpod.io/#https://github.com/FormalRequirements/requirements-handbook
 
 FILE: test.md
 [✓] http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf
