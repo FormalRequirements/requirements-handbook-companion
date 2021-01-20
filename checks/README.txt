@@ -12,4 +12,4 @@ FILE: README.adoc
 [✓] https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod
 [✓] https://gitpod.io/#https://github.com/FormalRequirements/requirements-handbook
 [✓] https://img.shields.io/badge/PDF-Download-blue
-[✖] https://github.com/FormalRequirements/requirements-handbook/blob/main/README.pdf
+[✓] https://github.com/FormalRequirements/requirements-handbook/blob/main/README.pdf
