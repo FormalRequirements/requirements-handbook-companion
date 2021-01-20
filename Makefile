@@ -6,7 +6,7 @@ CHECK_RES 		= check-results.txt
 DIAGRAMS        = images/*.svg      
 #-----------------------------------------------------
 
-all: README.html README.pdf
+all: README.pdf README.html 
 
 README.html: README.adoc $(CHECK_RES) $(DIAGRAMS)
 	asciidoctor -a toc=left README.adoc
