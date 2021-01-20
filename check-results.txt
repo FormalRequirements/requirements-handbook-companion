@@ -1,3 +1,4 @@
+Mer 20 jan 2021 12:08:03 CET
 
 FILE: README.adoc
 [✓] http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf
@@ -9,9 +10,13 @@ FILE: README.adoc
 [✓] https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod
 [✓] https://gitpod.io/#https://github.com/FormalRequirements/requirements-handbook
 
-FILE: test.md
+FILE: githubImpl.adoc
 [✓] http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf
-[/] http://requirements-handbook.org/
+[~] http://requirements-handbook.org/
 [✓] https://docs.google.com/document/d/1HrWCRzyW_iTf1QXFFzEoDvvc66IzMCDb3uXGS5GRWz8/edit?usp=sharing
+[✓] https://github.com
 
-3 links checked.
+FILE: overview.adoc
+[✓] http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf
+[~] http://requirements-handbook.org/
+[✓] https://docs.google.com/document/d/1HrWCRzyW_iTf1QXFFzEoDvvc66IzMCDb3uXGS5GRWz8/edit?usp=sharing

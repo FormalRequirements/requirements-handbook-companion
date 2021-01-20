@@ -24,11 +24,17 @@ images/%.svg: images/%.plantuml
 
 check: $(CHECK_RES)
 
-$(CHECK_RES): *.adoc *.md
+checks/%.txt: %.adoc
 	@echo "========================================"
 	@echo "==> checking the fix "
-	asciidoc-link-check *.adoc -c $(EXCLUDE_URLS) > $(CHECK_RES)
-	markdown-link-check *.md -c $(EXCLUDE_URLS) >> $(CHECK_RES)
+	asciidoc-link-check $ -c $(EXCLUDE_URLS) $< > $@
+
+
+$(CHECK_RES): checks/*.txt
+	@echo "========================================"
+	@echo "==> checking the fix "
+	@echo `date` > $(CHECK_RES)
+	cat checks/*.txt >> $(CHECK_RES)
 
 clean:
 	rm *.html

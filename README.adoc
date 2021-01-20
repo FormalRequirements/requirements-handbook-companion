@@ -7,7 +7,7 @@
 :toc:
 :numbered:
 
-:method: _Method_
+:method: pass:[<b>PEGS</b>]
 :hb-pdf: http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf
 :hb-title: Handbook of requirements and business analysis
 :hb-url: http://requirements-handbook.org/
@@ -40,28 +40,16 @@ WARNING: Work in progress!
 This repository constitutes the companion of the book: link:{hb-pdf}[{hb-title}].
 It serves has the basis for the future Handbook's site: {hb-url}
 
+ifdef::env-github[]
 //-------------------------------------
 == Overview of the method 
 
-image:pegs.png[]
+See the dedicated file: link:overview.adoc[]
+endif::[]
 
-=== Overall structure
-
-.The four books of requirements
-image::classification.svg[]
-
-=== Links between the four PEGS
-
-.Reference links
-image::links.svg[]
-
-.Verification obligations 
-image::verification.svg[]
-
-=== The lifecycle model
-
-.The lifecycle model
-image::lifecycle.svg[]
+ifndef::env-github[]
+include::overview.adoc[leveloffset=+1]
+endif::[]
 
 
 == Case studies
