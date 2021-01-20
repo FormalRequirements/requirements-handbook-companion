@@ -1,0 +1,53 @@
+= Overview of the method
+//------------------------- configuration
+:imagesdir: images
+:icons: font
+:toc:
+:lang: us
+:numbered:
+
+:method: pass:[<b>PEGS</b>]
+:hb-pdf: http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf
+:hb-title: Handbook of requirements and business analysis
+:hb-url: http://requirements-handbook.org/
+:cb-url: https://docs.google.com/document/d/1HrWCRzyW_iTf1QXFFzEoDvvc66IzMCDb3uXGS5GRWz8/edit?usp=sharing
+
+// icons for GitHub
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+//-------------------------------------
+
+
+WARNING: Work in progress!
+
+This chapter is an overview of {method}.
+Its aims at making this companion book self-content.
+We highly recommend, for more details and a full description of the subtleties of {method}, to read the corresponding {hb-pdf}[handbook].
+
+
+.The {method} logo
+image::pegs.png[]
+
+== Overall structure
+
+.The four books of requirements
+image::classification.svg[]
+
+== Links between the four PEGS
+
+.Reference links
+image::links.svg[]
+
+.Verification obligations 
+image::verification.svg[]
+
+== The lifecycle model
+
+.The lifecycle model
+image::lifecycle.svg[]
+
