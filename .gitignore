@@ -20,3 +20,7 @@ package-lock.json
 *.out
 *.toc
 *.aux
+.aux
+.log
+.toc
+.out
