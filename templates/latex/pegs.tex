@@ -1,0 +1,106 @@
+%Copyright 2020 Jean-Michel Bruel
+%This program is free template, under the terms of the attached License of this repo. 
+%Based on https://github.com/jpeisenbarth/SRS-Tex
+%Itself based on the code of Yiannis Lazarides
+%http://tex.stackexchange.com/questions/42602/software-requirements-specification-with-latex
+%http://tex.stackexchange.com/users/963/yiannis-lazarides
+%Also based on the template of Karl E. Wiegers
+%http://www.se.rit.edu/~emad/teaching/slides/srs_template_sep14.pdf
+%http://karlwiegers.com
+\documentclass{scrreprt}
+\usepackage{pegs}
+\usepackage{listings}
+\usepackage{underscore}
+\usepackage[bookmarks=true]{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\hypersetup{
+    bookmarks=false,    % show bookmarks bar?
+    pdftitle={Software Requirement Specification},    % title
+    pdfauthor={Jean-Philippe Eisenbarth},                     % author
+    pdfsubject={TeX and LaTeX},                        % subject of the document
+    pdfkeywords={TeX, LaTeX, graphics, images}, % list of keywords
+    colorlinks=true,       % false: boxed links; true: colored links
+    linkcolor=blue,       % color of internal links
+    citecolor=black,       % color of links to bibliography
+    filecolor=black,        % color of file links
+    urlcolor=purple,        % color of external links
+    linktoc=page            % only page is linked
+}%
+\def\myversion{1.0 }
+\date{}
+%\title{%
+
+%}
+\usepackage{hyperref}
+
+%--------------------- Comments ---------------
+\newcommand{\mynote}[3][black]{\textcolor{#1}{\fbox{\bfseries\sffamily\scriptsize{#2}}
+{\small\textsf{\emph{#3}}}}}
+\newcommand{\comment}[1]{\mynote[red]{Comment:}{#1}}
+%\newcommand{\comment}[1]{}
+
+\begin{document}
+
+\begin{flushright}
+    \rule{16cm}{5pt}\vskip1cm
+    \begin{bfseries}
+        \Huge{SOFTWARE REQUIREMENTS\\ SPECIFICATION}\\
+        \vspace{1.9cm}
+        for\\
+        \vspace{1.9cm}
+        $<$Project$>$\\
+        \vspace{1.9cm}
+        \LARGE{Version \myversion approved}\\
+        \vspace{1.9cm}
+        Prepared by $<$author$>$\\
+        \vspace{1.9cm}
+        $<$Organization$>$\\
+        \vspace{1.9cm}
+        \today\\
+    \end{bfseries}
+\end{flushright}
+
+\tableofcontents
+
+
+\chapter*{Revision History}
+
+\begin{center}
+    \begin{tabular}{|c|c|c|c|}
+        \hline
+	    Name        & Date          & Reason For Changes & Version\\
+        \hline
+        \hline
+	    J.-M. Bruel & 22/01/2021    & First Draft & 1.0\\
+        \hline
+    \end{tabular}
+\end{center}
+
+\chapter*{Process}
+
+\comment{This book is about...}
+
+\section*{P.1 Responsibilities}
+
+\comment{This section is about...}
+
+\section*{P.2 Imposed technical choices}
+
+\section*{P.3 Personnel characteristics and constraints}
+
+\section*{P.4 List of tasks}
+
+\section*{P.5 Schedule, milestones and deliverables}
+
+\section*{P.6 Individual task descriptions}
+
+\section*{P.7 Risks and mitigation analysis}
+
+\chapter*{Environment}
+
+\chapter*{Goals}
+
+\chapter*{System}
+
+\end{document}
