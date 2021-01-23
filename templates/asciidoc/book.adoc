@@ -1,0 +1,68 @@
+:title: SOFTWARE REQUIREMENTS SPECIFICATION
+:project: Project
+:version: 1.0
+:author: JM Bruel
+:email: name@institute.com
+:organization: IRIT/CNRS - University of Toulouse, France
+:icons: font
+
+= {title}
+{author},{email}
+{version} -- {localdate}
+
+:numbered!:
+:final!:
+
+== Process
+
+ifndef::final[NOTE: This book is about...]
+
+=== P.1 Responsibilities
+
+ifndef::final[NOTE: This book is about...]
+
+=== P.2 Imposed technical choices
+
+=== P.3 Personnel characteristics and constraints
+
+=== P.4 List of tasks
+
+=== P.5 Schedule, milestones and deliverables
+
+=== P.6 Individual task descriptions
+
+=== P.7 Risks and mitigation analysis
+
+== Environment
+
+== Goals
+
+== System
+
+This is an example of incomplete requirement.
+
+.TBD
+[%collapsible]
+====
+WARNING: This is a **T**o **B**e **D**etermined element. Please fill the following elements.
+
+Author:: 
+`[Name of author declaring the property “tbd”]`
+
+Initial Date:: 
+`[Date the property was found to be “tbd”]`
+
+Due Date:: 
+`[Date or project phase by which the indetermination should be resolved]`
+
+Importance of resolving it:: 
+`[show-stopper / serious / desirable]`
+
+What will be needed to resolve it::
+[%interactive]
+- [ ] stakeholders to ask; 
+- [ ] documentation to consider; 
+- [ ] management decision (by whom?)
+  
+[Remember to update the list of TBDs if needed]
+====
