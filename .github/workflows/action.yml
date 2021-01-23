@@ -16,7 +16,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [15.x]
+        node-version: [14.15]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
@@ -27,6 +27,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
         config-file: 'config.json'
     - run: npm install -g asciidoc-link-check
+    - run: npm audit fix
     - run: asciidoc-link-check README.adoc -c config.json
     - run: asciidoc-link-check githubImpl.adoc -c config.json
     - run: asciidoc-link-check overview.adoc -c config.json
