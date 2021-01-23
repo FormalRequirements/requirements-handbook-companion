@@ -115,27 +115,33 @@ RSML::
 - Florian could integrate the {method} in the editor
 
 
-ifdef::pdf-backend[]
 [appendix]
 //-------------------------------------
 === Checks results and issues
 
 ==== URLs 
 
+ifdef::pdf-backend[]
 .Checking URLs result (last update: {localdate}):
 [source,shell]
 --
 include::check-results.txt[]
 --
 endif::[]
+
 ifndef::pdf-backend[]
-[appendix]
-//-------------------------------------
-=== Checks results and issues
-
-==== URLs image:https://github.com/FormalRequirements/requirements-handbook/workflows/Check%20Markdown%20links/badge.svg[Check Markdown links]
-
+ifdef::env-github[]
 Checking URLs result (last update: {localdate}):
 
 See the following file: link:check-results.txt[]
+endif::[]
+
+.Checking URLs result (last update: {localdate}):
+[%collapsible]
+====
+[source,shell]
+--
+include::check-results.txt[]
+--
+====
 endif::[]
