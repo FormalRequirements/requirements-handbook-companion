@@ -25,6 +25,7 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
+        config-file: 'config.json'
     - run: npm install -g asciidoc-link-check
     - run: asciidoc-link-check README.adoc -c config.json
     - run: asciidoc-link-check githubImpl.adoc -c config.json
