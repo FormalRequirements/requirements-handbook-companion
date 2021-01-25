@@ -1,0 +1,6 @@
+branchName: full
+silent: false
+autoCloseIssue: true
+branches:
+  - label: wontfix
+    skip: true
