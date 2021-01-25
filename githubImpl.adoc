@@ -1,0 +1,56 @@
+= GitHub Implementation Example
+//------------------------- configuration
+:imagesdir: images
+:icons: font
+:toc:
+:numbered:
+
+:method: _Method_
+:hb-pdf: http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf
+:hb-title: Handbook of requirements and business analysis
+:hb-url: http://requirements-handbook.org/
+:cb-url: https://docs.google.com/document/d/1HrWCRzyW_iTf1QXFFzEoDvvc66IzMCDb3uXGS5GRWz8/edit?usp=sharing
+:github-icon: icon:github[]
+:github: https://github.com[{github-icon}GitHub]
+
+// icons for GitHub
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+:github-icon:
+endif::[]
+//-------------------------------------
+
+WARNING: Work in progress!
+
+//-------------------------------------
+== Context
+
+This document illustrates the use of {method} in the context of {github}.
+
+== Basic principles
+
+Requirements = issues
+
+== Available material
+
+===  A set of labels to categorize requirements
+
+.PEGS as labels
+image::githubLabels.png[GitHub labels,width=30%]
+
+=== Issue templates
+
+==== To Be Determined
+
+.TBD template
+image::issueTemplate.png[TBD template,width=50%]
+
+.TBD being filled
+image::issueTemplateFilling.png[TBD template filling,width=70%]
+
+.TBDs list
+image::tbdlist.png[TBDs list,width=50%]

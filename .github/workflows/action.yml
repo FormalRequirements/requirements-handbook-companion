@@ -1,4 +1,4 @@
-name: Check Markdown links
+name: Check URLs
 
 on: push
 
@@ -10,4 +10,23 @@ jobs:
     - uses: gaurav-nelson/github-action-markdown-link-check@v1
       with:
         config-file: 'config.json'
-        
+
+  asciidoc-link-check:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [14.15]
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+        config-file: 'config.json'
+    - run: npm install -g asciidoc-link-check
+    - run: asciidoc-link-check README.adoc -c config.json
+    - run: asciidoc-link-check githubImpl.adoc -c config.json
+    - run: asciidoc-link-check overview.adoc -c config.json

@@ -14,9 +14,9 @@ gradle-app.setting
 # gradle/wrapper/gradle-wrapper.properties
 .DS_Store
 node_modules
-README.html
--
-README.pdf
 .vscode
-.log
-texput.log
+package-lock.json
+*.log
+*.out
+*.toc
+*.aux

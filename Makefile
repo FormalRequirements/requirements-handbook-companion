@@ -6,7 +6,10 @@ CHECK_RES 		= check-results.txt
 DIAGRAMS        = images/*.svg      
 #-----------------------------------------------------
 
-all: README.html README.pdf
+all: README.pdf index.html 
+
+index.html: README.html
+	cp README.html index.html
 
 README.html: README.adoc $(CHECK_RES) $(DIAGRAMS)
 	asciidoctor -a toc=left README.adoc
@@ -24,11 +27,17 @@ images/%.svg: images/%.plantuml
 
 check: $(CHECK_RES)
 
-$(CHECK_RES): *.adoc *.md
+checks/%.txt: %.adoc
 	@echo "========================================"
 	@echo "==> checking the fix "
-	asciidoc-link-check *.adoc -c $(EXCLUDE_URLS) > $(CHECK_RES)
-	markdown-link-check *.md -c $(EXCLUDE_URLS) >> $(CHECK_RES)
+	asciidoc-link-check $ -c $(EXCLUDE_URLS) $< > $@
+
+
+$(CHECK_RES): checks/*.txt
+	@echo "========================================"
+	@echo "==> checking the fix "
+	@echo `date` > $(CHECK_RES)
+	cat checks/*.txt >> $(CHECK_RES)
 
 clean:
 	rm *.html

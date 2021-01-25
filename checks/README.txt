@@ -1,4 +1,3 @@
-Sam 23 jan 2021 19:16:19 CET
 
 FILE: README.adoc
 [✓] http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf
@@ -15,14 +14,3 @@ FILE: README.adoc
 [✓] https://img.shields.io/badge/PDF-Download-blue
 [✓] https://github.com/FormalRequirements/requirements-handbook/blob/main/README.pdf
 [✓] https://laptrinhx.com/a-latex-template-for-a-software-requirements-specification-that-respects-the-ieee-standards-3457260700/
-
-FILE: githubImpl.adoc
-[✓] http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf
-[~] http://requirements-handbook.org/
-[✓] https://docs.google.com/document/d/1HrWCRzyW_iTf1QXFFzEoDvvc66IzMCDb3uXGS5GRWz8/edit?usp=sharing
-[✓] https://github.com
-
-FILE: overview.adoc
-[✓] http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf
-[~] http://requirements-handbook.org/
-[✓] https://docs.google.com/document/d/1HrWCRzyW_iTf1QXFFzEoDvvc66IzMCDb3uXGS5GRWz8/edit?usp=sharing

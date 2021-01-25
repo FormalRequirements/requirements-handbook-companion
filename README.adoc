@@ -5,11 +5,13 @@
 :toc:
 :numbered:
 
-:method: _Method_
+:method: pass:[<b>PEGS</b>]
 :hb-pdf: http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf
 :hb-title: Handbook of requirements and business analysis
 :hb-url: http://requirements-handbook.org/
 :cb-url: https://docs.google.com/document/d/1HrWCRzyW_iTf1QXFFzEoDvvc66IzMCDb3uXGS5GRWz8/edit?usp=sharing
+:github-repo: https://github.com/FormalRequirements/requirements-handbook
+:github-io: https://FormalRequirements.github.io/requirements-handbook
 
 // icons for GitHub
 ifdef::env-github[]
@@ -23,59 +25,68 @@ endif::[]
 
 ifndef::pdf-backend[]
 //------------------------------------ Badges --------
-image:https://github.com/FormalRequirements/requirements-handbook/workflows/Check%20Markdown%20links/badge.svg[Check Markdown links]
+image:https://github.com/FormalRequirements/requirements-handbook/workflows/Check%20Markdown%20links/badge.svg[Check Markdown links,link="https://github.com/FormalRequirements/requirements-handbook/actions"]
 image:https://img.shields.io/badge/License-MIT-yellow.svg[License: MIT, link="https://opensource.org/licenses/MIT"]
+image:https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod[Gitpod ready-to-code ,link="https://gitpod.io/#https://github.com/FormalRequirements/requirements-handbook"]
+image:https://img.shields.io/badge/PDF-Download-blue[PDF download,link="https://github.com/FormalRequirements/requirements-handbook/blob/main/README.pdf"]
+
 //------------------------------------ Badges --------
 endif::[]
 
+:numbered:
+== Disclaimer
+
 WARNING: Work in progress!
 
+Here is a list of warnings:
+
+- This work is in progress and subject to constant improvements, so pay attention to dates and versions. 
+- If you read the `PDF` version of this material on a browser, the links might not be clickable. 
+Download it instead in your machine and open it with a PDF viewer. 
+The links should be clickable there.
+
+:numbered:
 //-------------------------------------
 == Context
 
 This repository constitutes the companion of the book: link:{hb-pdf}[{hb-title}].
-It serves has the basis for the future Handbook's site: {hb-url}
+It serves as the basis for the future Handbook's site: {hb-url}
 
+ifdef::env-github[]
 //-------------------------------------
-== Overview of the method image:pegs.svg[width=10%,pdfwidth=80%]
+== Overview of the method 
 
-=== Overall structure
+See the dedicated file: link:overview.adoc[]
+endif::[]
 
-.The four books of requirements
-image::classification.svg[]
+ifndef::env-github[]
+include::overview.adoc[leveloffset=+1]
+endif::[]
 
-=== Links between the four PEGS
+== Case studies
 
-.Reference links
-image::links.svg[]
+We illustrate the use of {method} through the following case studies:
 
-.Verification obligations 
-image::verification.svg[]
+WARNING: Work in progress
 
-=== The lifecycle model
+. The Roborace
+. A more information-system-oriented example
+. This Companion Book 
 
-.The lifecycle model
-image::lifecycle.svg[]
 
-=== Steps details
+== Book templates
 
-==== Goals & Environment
+We provide a set of Book templates in this companion web site to help you apply {method} and organize your requirements.
+Here is the list of the available templates (feel free to link:CONTRIBUTING.adoc[contribute] by submitting additional templates):
 
-==== Project & System
+WARNING: Work in progress
 
-==== Verify (definition step)
-
-==== Select clusters
-
-==== Cluster implementation
-
-==== Verify (implementation step)
-
-Advice would be to start with critical parts after maybe a little GUI step.
-
+. DOCX
+. Google Doc (see {cb-url}[this example] for now)
+. LaTeX (see https://laptrinhx.com/a-latex-template-for-a-software-requirements-specification-that-respects-the-ieee-standards-3457260700/[IEEE example])
+. link:githubImpl.adoc[GitHub] 
 
 :numbered!:
-
 == References
 
 - Sommerville & Sawyer
@@ -83,7 +94,6 @@ Advice would be to start with critical parts after maybe a little GUI step.
 - Klaus Pohl
 
 :numbered!:
-
 == Appendices
 
 [appendix]
@@ -105,33 +115,39 @@ SysML::
 - Requirements could be stereotyped (e.g., `<<Goals>>` or `<<System>>`)
 
 FORM-L::
-- Thuy could be interested in providing a template for the {method} in Form-L
+- M. Thuy could be interested in providing a template for the {method} in Form-L
 
 RSML::
 - Florian could integrate the {method} in the editor
 
 
-ifdef::pdf-backend[]
 [appendix]
 //-------------------------------------
 === Checks results and issues
 
 ==== URLs 
 
+ifdef::pdf-backend[]
 .Checking URLs result (last update: {localdate}):
 [source,shell]
 --
 include::check-results.txt[]
 --
 endif::[]
+
 ifndef::pdf-backend[]
-[appendix]
-//-------------------------------------
-=== Checks results and issues
-
-==== URLs image:https://github.com/FormalRequirements/requirements-handbook/workflows/Check%20Markdown%20links/badge.svg[Check Markdown links]
-
+ifdef::env-github[]
 Checking URLs result (last update: {localdate}):
 
 See the following file: link:check-results.txt[]
+endif::[]
+
+.Checking URLs result (last update: {localdate}):
+[%collapsible]
+====
+[source,shell]
+--
+include::check-results.txt[]
+--
+====
 endif::[]
