@@ -4,6 +4,7 @@
 :icons: font
 :toc:
 :numbered:
+:favicon: images/pegs.png
 
 :method: pass:[<b>PEGS</b>]
 :hb-pdf: http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf

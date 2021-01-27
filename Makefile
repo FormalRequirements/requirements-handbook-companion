@@ -29,15 +29,20 @@ check: $(CHECK_RES)
 
 checks/%.txt: %.adoc
 	@echo "========================================"
-	@echo "==> checking the fix "
+	@echo "==> checking the URLs "
 	asciidoc-link-check $ -c $(EXCLUDE_URLS) $< > $@
 
 
 $(CHECK_RES): checks/*.txt
 	@echo "========================================"
-	@echo "==> checking the fix "
+	@echo "==> checking the URLs "
 	@echo `date` > $(CHECK_RES)
 	cat checks/*.txt >> $(CHECK_RES)
 
 clean:
 	rm *.html
+
+deploy: check index.html
+        @echo "========================================"
+        @echo "==> Deploy updates "
+        git commit -am "🤖 DEPLOY: last updates"; git pull; git push
