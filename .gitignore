@@ -20,3 +20,5 @@ package-lock.json
 *.out
 *.toc
 *.aux
+README.html
+index.html
