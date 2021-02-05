@@ -13,4 +13,7 @@ FILE: README.adoc
 [✓] https://gitpod.io/#https://github.com/FormalRequirements/requirements-handbook
 [✓] https://img.shields.io/badge/PDF-Download-blue
 [✓] https://github.com/FormalRequirements/requirements-handbook/blob/main/README.pdf
+[✓] https://github.com/FormalRequirements/roboraceRequirements
+[✓] https://github.com/ddd-by-examples/library?ref=hackernoon.com#domain-description
+[✓] https://github.com/FormalRequirements/companionRequirements
 [✓] https://laptrinhx.com/a-latex-template-for-a-software-requirements-specification-that-respects-the-ieee-standards-3457260700/

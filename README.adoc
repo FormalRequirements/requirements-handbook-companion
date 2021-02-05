@@ -70,9 +70,9 @@ We illustrate the use of {method} through the following case studies:
 
 WARNING: Work in progress
 
-. The Roborace
-. A more information-system-oriented example
-. This Companion Book 
+. The Roborace (see the dedicated repo https://github.com/FormalRequirements/roboraceRequirements[here])
+. A more information-system-oriented example (one option is this https://github.com/ddd-by-examples/library?ref=hackernoon.com#domain-description[library] example)
+. This Companion Book' requirements (see the dedicated repo https://github.com/FormalRequirements/companionRequirements[here]) 
 
 
 == Book templates
