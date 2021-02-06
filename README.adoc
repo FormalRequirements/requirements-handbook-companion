@@ -13,14 +13,22 @@
 :cb-url: https://docs.google.com/document/d/1HrWCRzyW_iTf1QXFFzEoDvvc66IzMCDb3uXGS5GRWz8/edit?usp=sharing
 :github-repo: https://github.com/FormalRequirements/requirements-handbook
 :github-io: https://FormalRequirements.github.io/requirements-handbook
+:companionURL: https://formalrequirements.github.io/companionRequirements
+// ICONS
+:check: icon:check-circle[]
+:bug: icon:bug[]
+:missing: icon:times-circle[]
 
-// icons for GitHub
+// icons for GitHub https://gist.github.com/rxaviers/7360908
 ifdef::env-github[]
 :tip-caption: :bulb:
 :note-caption: :information_source:
 :important-caption: :heavy_exclamation_mark:
 :caution-caption: :fire:
 :warning-caption: :warning:
+:check: :green_book:
+:bug: icon:books[]
+:missing: icon:closed_book[]
 endif::[]
 //-------------------------------------
 
@@ -46,6 +54,19 @@ Here is a list of warnings:
 Download it instead in your machine and open it with a PDF viewer. 
 The links should be clickable there.
 
+Conventions for this book:
+
+//----------------------------------------------
+.Icons signification
+[cols="1,7",options="header"]
+|===
+| Icon | Signification
+//----------------------------------------------
+| {check}  | A precisely referenced requirement this section is satisfying
+| {bug}    | A precisely referenced requirement this section is related to
+| {missing}| No corresponding requirement for this section (should be fixed)
+|=== 
+//----------------------------------------------
 :numbered:
 //-------------------------------------
 == Context
@@ -86,6 +107,12 @@ WARNING: Work in progress
 . Google Doc (see {cb-url}[this example] for now)
 . LaTeX (see https://laptrinhx.com/a-latex-template-for-a-software-requirements-specification-that-respects-the-ieee-standards-3457260700/[IEEE example])
 . link:githubImpl.adoc[GitHub] 
+
+.{check} Corresponding Requirement
+[%collapsible]
+====
+This section satisfies {companionURL}/#g31[this requirement].
+====
 
 :numbered!:
 == References
