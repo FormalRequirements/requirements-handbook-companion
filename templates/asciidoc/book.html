@@ -438,17 +438,84 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 #footer-text{color:rgba(0,0,0,.6);font-size:.9em}}
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
 </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body class="article">
+<body class="article toc2 toc-left">
 <div id="header">
 <h1>SOFTWARE REQUIREMENTS SPECIFICATION</h1>
 <div class="details">
 <span id="author" class="author">JM Bruel</span><br>
 <span id="email" class="email"><a href="mailto:name@institute.com">name@institute.com</a></span><br>
-<span id="revdate">1.0 -- 2021-01-23</span>
+<span id="revdate">1.0 -- 2021-02-06</span>
+</div>
+<div id="toc" class="toc2">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_process">Process</a>
+<ul class="sectlevel2">
+<li><a href="#_p_1_responsibilities">P.1 Responsibilities</a></li>
+<li><a href="#_p_2_imposed_technical_choices">P.2 Imposed technical choices</a></li>
+<li><a href="#_p_3_personnel_characteristics_and_constraints">P.3 Personnel characteristics and constraints</a></li>
+<li><a href="#_p_4_list_of_tasks">P.4 List of tasks</a></li>
+<li><a href="#_p_5_schedule_milestones_and_deliverables">P.5 Schedule, milestones, and deliverables</a></li>
+<li><a href="#_p_6_individual_task_descriptions">P.6 Individual task descriptions</a></li>
+<li><a href="#_p_7_risks_and_mitigation_analysis">P.7 Risks and mitigation analysis</a></li>
+</ul>
+</li>
+<li><a href="#_environment">Environment</a>
+<ul class="sectlevel2">
+<li><a href="#_e_1_glossary">E.1 Glossary</a></li>
+<li><a href="#_e_2_components">E.2 Components</a></li>
+<li><a href="#_e_3_constraints">E.3 Constraints</a></li>
+<li><a href="#_e_4_assumptions">E.4 Assumptions</a></li>
+<li><a href="#_e_5_effects">E.5 Effects</a></li>
+<li><a href="#_e_6_invariants">E.6 Invariants</a></li>
+</ul>
+</li>
+<li><a href="#_goals">Goals</a>
+<ul class="sectlevel2">
+<li><a href="#_g_1_overall_context_and_goals">G.1 Overall context and goals</a></li>
+<li><a href="#_g_2_current_situation">G.2 Current situation</a></li>
+<li><a href="#_g_3_expected_benefits">G.3 Expected benefits</a></li>
+<li><a href="#_g_4_system_overview">G.4 System overview</a></li>
+<li><a href="#_g_5_limitations_and_exclusions">G.5 Limitations and exclusions</a></li>
+<li><a href="#_g_6_stakeholders">G.6 Stakeholders</a></li>
+<li><a href="#_g_7_requirements_sources">G.7 Requirements sources</a></li>
+</ul>
+</li>
+<li><a href="#_system">System</a>
+<ul class="sectlevel2">
+<li><a href="#_s_1_list_of_components">S.1 List of components</a></li>
+<li><a href="#_s_2_provided_functionality">S.2 Provided functionality</a></li>
+<li><a href="#_s_3_provided_interfaces">S.3 Provided interfaces</a></li>
+<li><a href="#_s_4_example_scenarios">S.4 Example scenarios</a></li>
+<li><a href="#_s_5_prioritization">S.5 Prioritization</a></li>
+</ul>
+</li>
+</ul>
 </div>
 </div>
 <div id="content">
+<div id="preamble">
+<div class="sectionbody">
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>This document constitutes the requirements for &#8230;&#8203;
+It follows the method presented in the <a href="http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf">Handbook of requirements and business analysis</a>.
+It uses the Asciidoc template available <a href="https://github.com/FormalRequirements/requirements-handbook/blob/issue-14-Write_an_Asciidoc_template_for_PEGS/templates/asciidoc/book.adoc">here</a>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
 <div class="sect1">
 <h2 id="_process">Process</h2>
 <div class="sectionbody">
@@ -456,7 +523,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <table>
 <tr>
 <td class="icon">
-<div class="title">Note</div>
+<i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
 This book is about&#8230;&#8203;
@@ -466,18 +533,7 @@ This book is about&#8230;&#8203;
 </div>
 <div class="sect2">
 <h3 id="_p_1_responsibilities">P.1 Responsibilities</h3>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<div class="title">Note</div>
-</td>
-<td class="content">
-This book is about&#8230;&#8203;
-</td>
-</tr>
-</table>
-</div>
+
 </div>
 <div class="sect2">
 <h3 id="_p_2_imposed_technical_choices">P.2 Imposed technical choices</h3>
@@ -492,7 +548,7 @@ This book is about&#8230;&#8203;
 
 </div>
 <div class="sect2">
-<h3 id="_p_5_schedule_milestones_and_deliverables">P.5 Schedule, milestones and deliverables</h3>
+<h3 id="_p_5_schedule_milestones_and_deliverables">P.5 Schedule, milestones, and deliverables</h3>
 
 </div>
 <div class="sect2">
@@ -508,18 +564,214 @@ This book is about&#8230;&#8203;
 <div class="sect1">
 <h2 id="_environment">Environment</h2>
 <div class="sectionbody">
+<div class="sect2">
+<h3 id="_e_1_glossary">E.1 Glossary</h3>
+<div class="paragraph">
+<p>In this section, we define the domain-specific terms used in this document.</p>
+</div>
+<div id="companion" class="dlist">
+<dl>
+<dt class="hdlist1"><a href="#companion">Companion Book</a></dt>
+<dd>
+<p>The <em>system</em> to be developed.</p>
+</dd>
+</dl>
+</div>
+<div id="handbook" class="dlist">
+<dl>
+<dt class="hdlist1"><a href="#handbook">Handbook</a></dt>
+<dd>
+<p>The book, entitled "Handbook of requirements and business analysis", written by Bertrand Meyer (see PDF <a href="http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf">here</a>), and for which the <a href="#companion">Companion Book</a> serves as a complementary material.</p>
+</dd>
+</dl>
+</div>
+<div class="paragraph">
+<p>In addition, here is the list of significations for the icons used when tracing the corresponding artifacts:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 1. Icons signification</caption>
+<colgroup>
+<col style="width: 12.5%;">
+<col style="width: 87.5%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Icon</th>
+<th class="tableblock halign-left valign-top">Signification</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="icon"><i class="fa fa-check-circle"></i></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A precisely referenced artifact satisfying the requirement</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="icon"><i class="fa fa-bug"></i></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">An artifact not yet fully functional</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="icon"><i class="fa fa-times-circle"></i></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No corresponding artifact yet (requirement not satisfied)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_e_2_components">E.2 Components</h3>
 
+</div>
+<div class="sect2">
+<h3 id="_e_3_constraints">E.3 Constraints</h3>
+
+</div>
+<div class="sect2">
+<h3 id="_e_4_assumptions">E.4 Assumptions</h3>
+
+</div>
+<div class="sect2">
+<h3 id="_e_5_effects">E.5 Effects</h3>
+
+</div>
+<div class="sect2">
+<h3 id="_e_6_invariants">E.6 Invariants</h3>
+
+</div>
 </div>
 </div>
 <div class="sect1">
 <h2 id="_goals">Goals</h2>
 <div class="sectionbody">
+<div class="sect2">
+<h3 id="_g_1_overall_context_and_goals">G.1 Overall context and goals</h3>
 
+</div>
+<div class="sect2">
+<h3 id="_g_2_current_situation">G.2 Current situation</h3>
+
+</div>
+<div class="sect2">
+<h3 id="_g_3_expected_benefits">G.3 Expected benefits</h3>
+<div id="g31" class="olist arabic">
+<ol class="arabic">
+<li>
+<p><a href="#readerC">Readers</a> of the <a href="#companion">Companion Book</a> should be able to find some templates for the requirements' book structure.</p>
+<details>
+<summary class="title"><span class="icon"><i class="fa fa-check-circle"></i></span> Corresponding Artifact</summary>
+<div class="content">
+<div class="paragraph">
+<p><a href="https://formalrequirements.github.io/requirements-handbook/#5-book-templates" class="bare">https://formalrequirements.github.io/requirements-handbook/#5-book-templates</a></p>
+</div>
+</div>
+</details>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_g_4_system_overview">G.4 System overview</h3>
+<div class="paragraph">
+<p>The <em>system</em> to be developed in this specification is &#8230;&#8203;</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_g_5_limitations_and_exclusions">G.5 Limitations and exclusions</h3>
+
+</div>
+<div class="sect2">
+<h3 id="_g_6_stakeholders">G.6 Stakeholders</h3>
+<div class="paragraph">
+<p>Here is a non-exhaustive list of the stakeholders.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 2. Target side stakeholders</caption>
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 60%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Stakeholder</th>
+<th class="tableblock halign-left valign-top">Category</th>
+<th class="tableblock halign-left valign-top">Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Springer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Legal department</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">In charge of the edition of the <a href="#companion">Companion Book</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Readers of the <a href="#handbook">Handbook</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">User</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Readers of the main <a href="#handbook">Handbook</a> that might need additional information about the method</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a id="readerC"></a>Readers of the <a href="#companion">Companion Book</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">User</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Person reading the <a href="#companion">Companion Book</a> who might not have access to the main <a href="#handbook">Handbook</a></p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 3. Production side stakeholders</caption>
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 60%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Stakeholder</th>
+<th class="tableblock halign-left valign-top">Category</th>
+<th class="tableblock halign-left valign-top">Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bertrand Meyer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Domain Expert</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Author of the <a href="#handbook">Handbook</a>, and main evaluator of the <a href="#companion">Companion Book</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Jean-Michel Bruel</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Project Manager</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Author and effort leader of the <a href="#companion">Companion Book</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_g_7_requirements_sources">G.7 Requirements sources</h3>
+
+</div>
 </div>
 </div>
 <div class="sect1">
 <h2 id="_system">System</h2>
 <div class="sectionbody">
+<div class="sect2">
+<h3 id="_s_1_list_of_components">S.1 List of components</h3>
+
+</div>
+<div class="sect2">
+<h3 id="_s_2_provided_functionality">S.2 Provided functionality</h3>
+
+</div>
+<div class="sect2">
+<h3 id="_s_3_provided_interfaces">S.3 Provided interfaces</h3>
+
+</div>
+<div class="sect2">
+<h3 id="_s_4_example_scenarios">S.4 Example scenarios</h3>
+
+</div>
+<div class="sect2">
+<h3 id="_s_5_prioritization">S.5 Prioritization</h3>
+<div class="paragraph">
+<p>This is an example of an incomplete requirement.</p>
+</div>
 <details>
 <summary class="title">TBD</summary>
 <div class="content">
@@ -527,7 +779,7 @@ This book is about&#8230;&#8203;
 <table>
 <tr>
 <td class="icon">
-<div class="title">Warning</div>
+<i class="fa icon-warning" title="Warning"></i>
 </td>
 <td class="content">
 This is a <strong>T</strong>o <strong>B</strong>e <strong>D</strong>etermined element. Please fill the following elements.
@@ -538,49 +790,46 @@ This is a <strong>T</strong>o <strong>B</strong>e <strong>D</strong>etermined el
 <div class="dlist">
 <dl>
 <dt class="hdlist1">Author</dt>
+<dd>
+<p><code>[Name of author declaring the property “tbd”]</code></p>
+</dd>
+<dt class="hdlist1">Initial Date</dt>
+<dd>
+<p><code>[Date the property was found to be “tbd”]</code></p>
+</dd>
+<dt class="hdlist1">Due Date</dt>
+<dd>
+<p><code>[Date or project phase by which the indetermination should be resolved]</code></p>
+</dd>
+<dt class="hdlist1">Importance of resolving it</dt>
+<dd>
+<p><code>[show-stopper / serious / desirable]</code></p>
+</dd>
+<dt class="hdlist1">What will be needed to resolve it</dt>
 </dl>
 </div>
-<div class="dlist Name of author declaring the property “tbd”">
-<dl>
-<dt>Author</dt>
-<dd>
-<p>[Date the property was found to be “tbd”.</p>
-</dd>
-<dt>Author</dt>
-<dd>
-<p>[Date or project phase by which the indetermination should be resolved.</p>
-</dd>
-<dt>Importance of resolving it</dt>
-</dl>
-</div>
-<div class="dlist show-stopper / serious / desirable">
-<dl>
-<dt>What will be needed to resolve it</dt>
-<dd>
 <div class="ulist checklist">
 <ul class="checklist">
 <li>
-<p>&#10063; stakeholders to ask;</p>
+<p><input type="checkbox" data-item-complete="0"> stakeholders to ask;</p>
 </li>
 <li>
-<p>&#10063; documentation to consider;</p>
+<p><input type="checkbox" data-item-complete="0"> documentation to consider;</p>
 </li>
 <li>
-<p>&#10063; management decision (by whom?)</p>
+<p><input type="checkbox" data-item-complete="0"> management decision (by whom?)</p>
 </li>
 </ul>
-</div>
-</dd>
-</dl>
 </div>
 </div>
 </details>
 </div>
 </div>
 </div>
+</div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2021-01-23 20:23:19 +0100
+Last updated 2021-02-06 14:30:22 +0100
 </div>
 </div>
 </body>

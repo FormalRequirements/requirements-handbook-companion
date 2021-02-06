@@ -5,13 +5,30 @@
 :email: name@institute.com
 :organization: IRIT/CNRS - University of Toulouse, France
 :icons: font
-
+:toc: left
 = {title}
 {author},{email}
 {version} -- {localdate}
 
-:numbered!:
-:final!:
+//--------------------------- Glossary & Definitions
+// URLS
+:companionURL: https://formalrequirements.github.io/requirements-handbook
+:HandbookPDF: http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf
+:companionGit: https://github.com/FormalRequirements/requirements-handbook
+// ICONS
+:check: icon:check-circle[]
+:bug: icon:bug[]
+:missing: icon:times-circle[]
+// GLOSSARY ENTRIES
+:companion: <<companion, Companion Book>>
+:handbook:  <<handbook, Handbook>>
+
+[NOTE]
+====
+This document constitutes the requirements for ...
+It follows the method presented in the {HandbookPDF}[Handbook of requirements and business analysis].
+It uses the Asciidoc template available {companionGit}/blob/issue-14-Write_an_Asciidoc_template_for_PEGS/templates/asciidoc/book.adoc[here].
+====
 
 == Process
 
@@ -19,15 +36,13 @@ ifndef::final[NOTE: This book is about...]
 
 === P.1 Responsibilities
 
-ifndef::final[NOTE: This book is about...]
-
 === P.2 Imposed technical choices
 
 === P.3 Personnel characteristics and constraints
 
 === P.4 List of tasks
 
-=== P.5 Schedule, milestones and deliverables
+=== P.5 Schedule, milestones, and deliverables
 
 === P.6 Individual task descriptions
 
@@ -35,11 +50,107 @@ ifndef::final[NOTE: This book is about...]
 
 == Environment
 
+=== E.1 Glossary
+
+In this section, we define the domain-specific terms used in this document.
+
+[[companion]]
+{companion}:: The _system_ to be developed.  
+
+[[handbook]]
+{handbook}:: The book, entitled "Handbook of requirements and business analysis", written by Bertrand Meyer (see PDF {HandbookPDF}[here]), and for which the {companion} serves as a complementary material.
+
+In addition, here is the list of significations for the icons used when tracing the corresponding artifacts:
+
+//----------------------------------------------
+.Icons signification
+[cols="1,7",options="header"]
+|===
+| Icon | Signification
+//----------------------------------------------
+| {check}  | A precisely referenced artifact satisfying the requirement
+| {bug}    | An artifact not yet fully functional
+| {missing}| No corresponding artifact yet (requirement not satisfied)
+|=== 
+//----------------------------------------------
+
+=== E.2 Components
+
+=== E.3 Constraints
+
+=== E.4 Assumptions
+
+=== E.5 Effects
+
+=== E.6 Invariants
+
 == Goals
+
+=== G.1 Overall context and goals
+
+=== G.2 Current situation
+
+=== G.3 Expected benefits 
+
+[[g31]]
+. <<readerC, Readers>> of the {companion} should be able to find some templates for the requirements' book structure.
++
+.{check} Corresponding Artifact
+[%collapsible]
+====
+{companionURL}/#5-book-templates
+====
+
+=== G.4 System overview
+
+The _system_ to be developed in this specification is ...
+
+=== G.5 Limitations and exclusions 
+
+=== G.6 Stakeholders
+
+Here is a non-exhaustive list of the stakeholders.
+
+//----------------------------------------------
+.Target side stakeholders
+[cols="1,1,3",,options="header"]
+|===
+| Stakeholder | Category | Comment 
+//----------------------------------------------
+| Springer | Legal department | In charge of the edition of the {companion}
+| Readers of the {handbook} | User | Readers of the main {handbook} that might need additional information about the method
+| [[readerC]]Readers of the {companion} | User | Person reading the {companion} who might not have access to the main {handbook}
+|=== 
+//----------------------------------------------
+
+//----------------------------------------------
+.Production side stakeholders
+[cols="1,1,3",,options="header"]
+|===
+| Stakeholder | Category | Comment 
+//----------------------------------------------
+| Bertrand Meyer | Domain Expert | Author of the {handbook}, and main evaluator of the {companion}
+| Jean-Michel Bruel | Project Manager | Author and effort leader of the {companion}
+|===
+//----------------------------------------------
+
+=== G.7 Requirements sources
 
 == System
 
-This is an example of incomplete requirement.
+=== S.1 List of components
+
+=== S.2 Provided functionality
+
+=== S.3 Provided interfaces
+
+=== S.4 Example scenarios
+
+=== S.5 Prioritization
+
+
+
+This is an example of an incomplete requirement.
 
 .TBD
 [%collapsible]
