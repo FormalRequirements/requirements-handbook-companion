@@ -12,13 +12,16 @@ gradle-app.setting
 
 # # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
 # gradle/wrapper/gradle-wrapper.properties
-.DS_Store
+**/.DS_Store
 node_modules
 .vscode
 package-lock.json
-*.log
-*.out
-*.toc
-*.aux
+**/*.log
+**/*.out
+**/*.toc
+**/*.aux
+**/*.fdb_latexmk
+**/*.fls
+**/*.synctex.gz
+
 README.html
-index.html
