@@ -2,11 +2,14 @@
 //------------------------- configuration
 :imagesdir: images
 :icons: font
-:toc:
+:toc: left
 :numbered:
 :favicon: images/pegs.png
 
 :method: pass:[<b>PEGS</b>]
+ifdef::pdf-backend[]
+:method: PEGS
+endif::[]
 :hb-pdf: http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf
 :hb-title: Handbook of requirements and business analysis
 :hb-url: http://requirements-handbook.org/
