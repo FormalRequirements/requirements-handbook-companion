@@ -10,10 +10,10 @@ package P as "Project (P)" {
     class p1 as "P.1 Responsibilities" <<Project>>
     class p2 as "P.2 Imposed technical choices" <<Project>>
     class p3 as "P.3 Personnel characteristics and constraints" <<Project>>
-    class p4 as "P.4 List of tasks" <<Project>>
-    class p5 as "P.5 Schedule, milestones and deliverables" <<Project>>
-    class p6 as "P.6 Individual task descriptions" <<Project>>
-    class p7 as "P.7 Risks and mitigation analysis" <<Project>>
+    class p4 as "P.4 Schedule, milestones and deliverables" <<Project>>
+    class p5 as "P.5 Description of individual steps and tasks" <<Project>>
+    class p6 as "P.6 Risks and mitigation analysis" <<Project>>
+    class p7 as "P.7 Requirements process and report" <<Project>>
     'p1 -[hidden]-> p2
     'p2 -[hidden]-> p3
 }   
