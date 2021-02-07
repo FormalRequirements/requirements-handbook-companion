@@ -40,13 +40,13 @@ ifndef::final[NOTE: This book is about...]
 
 === P.3 Personnel characteristics and constraints
 
-=== P.4 List of tasks
+=== P.4 Schedule, milestones, and deliverables
 
-=== P.5 Schedule, milestones, and deliverables
+=== P.5 Description of individual steps and tasks
 
-=== P.6 Individual task descriptions
+=== P.6 Risks and mitigation analysis
 
-=== P.7 Risks and mitigation analysis
+=== P.7 Requirements process and report
 
 == Environment
 
