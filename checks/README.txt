@@ -7,7 +7,7 @@ FILE: README.adoc
 [✓] https://FormalRequirements.github.io/requirements-handbook
 [✓] https://formalrequirements.github.io/companionRequirements
 [✓] https://gist.github.com/rxaviers/7360908
-[/] https://github.com/FormalRequirements/requirements-handbook/workflows/Check%20Markdown%20links/badge.svg
+[✓] https://github.com/FormalRequirements/requirements-handbook/workflows/Check%20URLs/badge.svg
 [✓] https://github.com/FormalRequirements/requirements-handbook/actions
 [✓] https://img.shields.io/badge/License-MIT-yellow.svg
 [✓] https://opensource.org/licenses/MIT

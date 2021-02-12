@@ -37,7 +37,7 @@ endif::[]
 
 ifndef::pdf-backend[]
 //------------------------------------ Badges --------
-image:https://github.com/FormalRequirements/requirements-handbook/workflows/Check%20Markdown%20links/badge.svg[Check Markdown links,link="https://github.com/FormalRequirements/requirements-handbook/actions"]
+image:https://github.com/FormalRequirements/requirements-handbook/workflows/Check%20URLs/badge.svg[Check Markdown links,link="https://github.com/FormalRequirements/requirements-handbook/actions"]
 image:https://img.shields.io/badge/License-MIT-yellow.svg[License: MIT, link="https://opensource.org/licenses/MIT"]
 image:https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod[Gitpod ready-to-code ,link="https://gitpod.io/#https://github.com/FormalRequirements/requirements-handbook"]
 image:https://img.shields.io/badge/PDF-Download-blue[PDF download,link="https://github.com/FormalRequirements/requirements-handbook/blob/main/README.pdf"]
