@@ -2,7 +2,7 @@
   "name": "multiRequirements",
   "version": "1.0.0",
   "dependencies": {
-    "asciidoc-link-check": "~1.0.0",
+    "asciidoc-link-check": "^1.0.14",
     "axios": ">=0.21.1",
     "markdown-link-check": "~1.0.0"
   }

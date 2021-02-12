@@ -108,7 +108,7 @@ WARNING: Work in progress
 
 . DOCX
 . Google Doc (see {cb-url}[this example] for now)
-. LaTeX (see https://laptrinhx.com/a-latex-template-for-a-software-requirements-specification-that-respects-the-ieee-standards-3457260700/[IEEE example])
+. LaTeX (see https://github.com/jpeisenbarth/SRS-Tex[IEEE example])
 . link:githubImpl.adoc[GitHub] 
 
 .{check} Corresponding Requirement
