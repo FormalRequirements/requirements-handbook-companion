@@ -1,35 +1,31 @@
-Ven 12 fév 2021 14:52:59 CET
+Jeu 18 fév 2021 17:49:31 CET
 
 FILE: README.adoc
 [✓] http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf
-[/] http://requirements-handbook.org/
+[~] http://requirements-handbook.org/
 [✓] https://docs.google.com/document/d/1HrWCRzyW_iTf1QXFFzEoDvvc66IzMCDb3uXGS5GRWz8/edit?usp=sharing
-[✓] https://github.com/FormalRequirements/requirements-handbook
-[✓] https://FormalRequirements.github.io/requirements-handbook
+[✓] https://github.com/FormalRequirements/requirements-handbook-companion
+[✓] https://FormalRequirements.github.io/requirements-handbook-companion
 [✓] https://formalrequirements.github.io/companionRequirements
 [✓] https://gist.github.com/rxaviers/7360908
-[✓] https://github.com/FormalRequirements/requirements-handbook/workflows/Check%20URLs/badge.svg
-[✓] https://github.com/FormalRequirements/requirements-handbook/actions
+[✓] https://github.com/FormalRequirements/requirements-handbook-companion/workflows/Check%20URLs/badge.svg
+[✓] https://github.com/FormalRequirements/requirements-handbook-companion/actions
 [✓] https://img.shields.io/badge/License-MIT-yellow.svg
 [✓] https://opensource.org/licenses/MIT
 [✓] https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod
-[✓] https://gitpod.io/#https://github.com/FormalRequirements/requirements-handbook
+[✓] https://gitpod.io/#https://github.com/FormalRequirements/requirements-handbook-companion
 [✓] https://img.shields.io/badge/PDF-Download-blue
-[✓] https://github.com/FormalRequirements/requirements-handbook/blob/main/README.pdf
+[✓] https://github.com/FormalRequirements/requirements-handbook-companion/blob/main/README.pdf
 [✓] https://github.com/FormalRequirements/roboraceRequirements
 [✓] https://github.com/ddd-by-examples/library?ref=hackernoon.com#domain-description
 [✓] https://github.com/FormalRequirements/companionRequirements
 [✓] https://github.com/jpeisenbarth/SRS-Tex
 
-19 links checked.
-
 FILE: githubImpl.adoc
 [✓] http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf
-[/] http://requirements-handbook.org/
+[✖] http://requirements-handbook.org/
 [✓] https://docs.google.com/document/d/1HrWCRzyW_iTf1QXFFzEoDvvc66IzMCDb3uXGS5GRWz8/edit?usp=sharing
 [✓] https://github.com
-
-4 links checked.
 
 FILE: overview.adoc
 [✓] http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf

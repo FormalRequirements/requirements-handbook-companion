@@ -14,8 +14,8 @@ endif::[]
 :hb-title: Handbook of requirements and business analysis
 :hb-url: http://requirements-handbook.org/
 :cb-url: https://docs.google.com/document/d/1HrWCRzyW_iTf1QXFFzEoDvvc66IzMCDb3uXGS5GRWz8/edit?usp=sharing
-:github-repo: https://github.com/FormalRequirements/requirements-handbook
-:github-io: https://FormalRequirements.github.io/requirements-handbook
+:github-repo: https://github.com/FormalRequirements/requirements-handbook-companion
+:github-io: https://FormalRequirements.github.io/requirements-handbook-companion
 :companionURL: https://formalrequirements.github.io/companionRequirements
 // ICONS
 :check: icon:check-circle[]
@@ -37,10 +37,10 @@ endif::[]
 
 ifndef::pdf-backend[]
 //------------------------------------ Badges --------
-image:https://github.com/FormalRequirements/requirements-handbook/workflows/Check%20URLs/badge.svg[Check Markdown links,link="https://github.com/FormalRequirements/requirements-handbook/actions"]
+image:https://github.com/FormalRequirements/requirements-handbook-companion/workflows/Check%20URLs/badge.svg[Check Markdown links,link="https://github.com/FormalRequirements/requirements-handbook-companion/actions"]
 image:https://img.shields.io/badge/License-MIT-yellow.svg[License: MIT, link="https://opensource.org/licenses/MIT"]
-image:https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod[Gitpod ready-to-code ,link="https://gitpod.io/#https://github.com/FormalRequirements/requirements-handbook"]
-image:https://img.shields.io/badge/PDF-Download-blue[PDF download,link="https://github.com/FormalRequirements/requirements-handbook/blob/main/README.pdf"]
+image:https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod[Gitpod ready-to-code ,link="https://gitpod.io/#https://github.com/FormalRequirements/requirements-handbook-companion"]
+image:https://img.shields.io/badge/PDF-Download-blue[PDF download,link="https://github.com/FormalRequirements/requirements-handbook-companion/blob/main/README.pdf"]
 
 //------------------------------------ Badges --------
 endif::[]

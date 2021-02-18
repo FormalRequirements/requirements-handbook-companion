@@ -21,4 +21,4 @@ labels: TBD
   
 ### List of TBDs
 
-https://github.com/FormalRequirements/requirements-handbook/labels/TBD
+https://github.com/FormalRequirements/requirements-handbook-companion/labels/TBD
