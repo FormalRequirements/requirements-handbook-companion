@@ -3,7 +3,7 @@ cluster P--><path d="M11,92.79 L67,92.79 A7.5,7.5 0 0 1 72,97.79 L79,112.7236 L7
 cluster E--><path d="M847,92.79 L934,92.79 A7.5,7.5 0 0 1 939,97.79 L946,112.7236 L1226,112.7236 A5,5 0 0 1 1231,117.7236 L1231,259.79 A5,5 0 0 1 1226,264.79 L847,264.79 A5,5 0 0 1 842,259.79 L842,97.79 A5,5 0 0 1 847,92.79 " fill="#FFFFFF" filter="url(#f12a9rsw4as17j)" style="stroke: #2F4F4F; stroke-width: 1.5;"/><line style="stroke: #2F4F4F; stroke-width: 1.5;" x1="842" x2="946" y1="112.7236" y2="112.7236"/><text fill="#000000" font-family="TrebuchetMS" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="91" x="846" y="106.0576">Environment (E)</text><!--MD5=[b3b444921c8b4ce57d1ac277af47b801]
 cluster G--><path d="M55,388.79 L101,388.79 A7.5,7.5 0 0 1 106,393.79 L113,408.7236 L602,408.7236 A5,5 0 0 1 607,413.7236 L607,643.79 A5,5 0 0 1 602,648.79 L55,648.79 A5,5 0 0 1 50,643.79 L50,393.79 A5,5 0 0 1 55,388.79 " fill="#FFFFFF" filter="url(#f12a9rsw4as17j)" style="stroke: #2F4F4F; stroke-width: 1.5;"/><line style="stroke: #2F4F4F; stroke-width: 1.5;" x1="50" x2="113" y1="408.7236" y2="408.7236"/><text fill="#000000" font-family="TrebuchetMS" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="50" x="54" y="402.0576">Goals (G)</text><!--MD5=[af4e165634b2a4ca3c4688fff127cc50]
 cluster S--><path d="M652,476.79 L705,476.79 A7.5,7.5 0 0 1 710,481.79 L717,496.7236 L1189,496.7236 A5,5 0 0 1 1194,501.7236 L1194,643.79 A5,5 0 0 1 1189,648.79 L652,648.79 A5,5 0 0 1 647,643.79 L647,481.79 A5,5 0 0 1 652,476.79 " fill="#FFFFFF" filter="url(#f12a9rsw4as17j)" style="stroke: #2F4F4F; stroke-width: 1.5;"/><line style="stroke: #2F4F4F; stroke-width: 1.5;" x1="647" x2="717" y1="496.7236" y2="496.7236"/><text fill="#000000" font-family="TrebuchetMS" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="57" x="651" y="490.0576">System (S)</text><!--MD5=[d31afda0cc48baf0421fddc3e8b169da]
-class p1--><rect codeLine="9" fill="#000000" filter="url(#f12a9rsw4as17j)" height="23.9336" id="p1" rx="5" ry="5" style="stroke: #000000; stroke-width: 1.5;" width="111" x="120.5" y="132.79"/><text fill="#FFFFFF" font-family="TrebuchetMS" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="105" x="123.5" y="149.0576">P.1 Responsibilities</text><!--MD5=[628d87af146a3c6c03649b82b9cf03ea]
+class p1--><rect codeLine="9" fill="#000000" filter="url(#f12a9rsw4as17j)" height="23.9336" id="p1" rx="5" ry="5" style="stroke: #000000; stroke-width: 1.5;" width="111" x="120.5" y="132.79"/><text fill="#FFFFFF" font-family="TrebuchetMS" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="105" x="123.5" y="149.0576">P.1 Roles</text><!--MD5=[628d87af146a3c6c03649b82b9cf03ea]
 class p2--><rect codeLine="10" fill="#000000" filter="url(#f12a9rsw4as17j)" height="23.9336" id="p2" rx="5" ry="5" style="stroke: #000000; stroke-width: 1.5;" width="171" x="283.5" y="132.79"/><text fill="#FFFFFF" font-family="TrebuchetMS" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="165" x="286.5" y="149.0576">P.2 Imposed technical choices</text><!--MD5=[6fcb1788df40121b0c7679a14a73c3e9]
 class p3--><rect codeLine="11" fill="#000000" filter="url(#f12a9rsw4as17j)" height="23.9336" id="p3" rx="5" ry="5" style="stroke: #000000; stroke-width: 1.5;" width="254" x="524" y="132.79"/><text fill="#FFFFFF" font-family="TrebuchetMS" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="248" x="527" y="149.0576">P.3 Personnel characteristics and constraints</text><!--MD5=[6ed903483baadb911cdb610d096e2074]
 class p4--><rect codeLine="12" fill="#000000" filter="url(#f12a9rsw4as17j)" height="23.9336" id="p4" rx="5" ry="5" style="stroke: #000000; stroke-width: 1.5;" width="241" x="38.5" y="216.79"/><text fill="#FFFFFF" font-family="TrebuchetMS" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="235" x="41.5" y="233.0576">P.4 Schedule, milestones and deliverables</text><!--MD5=[0ec8be22f3d5183db656c00c6d4ff993]
@@ -63,7 +63,7 @@ link g3 to s1--><!--MD5=[b4bb8a7fe291893a85262e409aa5d070]
 !include config.cfg
 
 package P as "Project (P)" {
-    class p1 as "P.1 Responsibilities" <<Project>>
+    class p1 as "P.1 Roles" <<Project>>
     class p2 as "P.2 Imposed technical choices" <<Project>>
     class p3 as "P.3 Personnel characteristics and constraints" <<Project>>
     class p4 as "P.4 Schedule, milestones and deliverables" <<Project>>
@@ -177,7 +177,7 @@ skinparam arrow {
 
 
 package P as "Project (P)" {
-    class p1 as "P.1 Responsibilities" <<Project>>
+    class p1 as "P.1 Roles" <<Project>>
     class p2 as "P.2 Imposed technical choices" <<Project>>
     class p3 as "P.3 Personnel characteristics and constraints" <<Project>>
     class p4 as "P.4 Schedule, milestones and deliverables" <<Project>>
