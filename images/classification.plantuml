@@ -8,10 +8,10 @@
 
 package P as "Project (P)" {
     class p1 as "P.1 Roles" <<Project>>
-    class p2 as "P.2 Imposed technical choices" <<Project>>
-    class p3 as "P.3 Personnel characteristics and constraints" <<Project>>
-    class p4 as "P.4 Schedule, milestones and deliverables" <<Project>>
-    class p5 as "P.5 Description of individual steps and tasks" <<Project>>
+    class p2 as "P.2 Personnel characteristics and constraints" <<Project>>
+    class p3 as "P.3 Imposed technical choices" <<Project>>
+    class p4 as "P.4 Schedule and milestones" <<Project>>
+    class p5 as "P.5 Tasks and deliverables" <<Project>>
     class p6 as "P.6 Risks and mitigation analysis" <<Project>>
     class p7 as "P.7 Requirements process and report" <<Project>>
     'p1 -[hidden]-> p2
@@ -38,11 +38,12 @@ package G as "Goals (G)" {
 }
 
 package S as "System (S)" {
-    class s1 as "S.1 List of components" <<System>>
-    class s2 as "S.2 Provided functionality" <<System>>
-    class s3 as "S.3 Provided interfaces" <<System>>
-    class s4 as "S.4 Example scenarios" <<System>>
+    class s1 as "S.1 Components" <<System>>
+    class s2 as "S.2 Functionality" <<System>>
+    class s3 as "S.3 Interfaces" <<System>>
+    class s4 as "S.4 Scenarios (uses case, user stories)" <<System>>
     class s5 as "S.5 Prioritization" <<System>>
+    class s6 as "S.6 Verification and acceptance criteria" <<System>>
 }
 
 ' -------- For presentation/consistency purposes PEGS
