@@ -168,11 +168,14 @@ endif::[]
 
 ifndef::pdf-backend[]
 ifdef::env-github[]
-Checking URLs result (last update: {localdate}):
-
-See the following file: link:check-results.txt[]
+.Checking URLs result (last update: {localdate}):
+[%collapsible]
+====
+See the following file: check-results.txt[]
+====
 endif::[]
 
+ifndef::env-github[]
 .Checking URLs result (last update: {localdate}):
 [%collapsible]
 ====
@@ -181,4 +184,5 @@ endif::[]
 include::check-results.txt[]
 --
 ====
-endif::[]
+endif::env-github[]
+endif::pdf-backend[]
