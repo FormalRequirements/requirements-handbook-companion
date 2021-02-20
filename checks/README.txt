@@ -19,3 +19,4 @@ FILE: README.adoc
 [✓] https://github.com/ddd-by-examples/library?ref=hackernoon.com#domain-description
 [✓] https://github.com/FormalRequirements/companionRequirements
 [✓] https://github.com/jpeisenbarth/SRS-Tex
+[✓] https://github.com/FormalRequirements/requirements-handbook-companion/blob/main/check-results.txt

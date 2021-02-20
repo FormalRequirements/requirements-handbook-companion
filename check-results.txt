@@ -1,4 +1,4 @@
-Sam 20 fév 2021 15:19:24 CET
+Sam 20 fév 2021 15:21:51 CET
 
 FILE: README.adoc
 [✓] http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf
@@ -20,6 +20,7 @@ FILE: README.adoc
 [✓] https://github.com/ddd-by-examples/library?ref=hackernoon.com#domain-description
 [✓] https://github.com/FormalRequirements/companionRequirements
 [✓] https://github.com/jpeisenbarth/SRS-Tex
+[✓] https://github.com/FormalRequirements/requirements-handbook-companion/blob/main/check-results.txt
 
 FILE: githubImpl.adoc
 [✓] http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf

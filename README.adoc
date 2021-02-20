@@ -171,7 +171,7 @@ ifdef::env-github[]
 .Checking URLs result (last update: {localdate}):
 [%collapsible]
 ====
-See the following file: check-results.txt[]
+See the following file: https://github.com/FormalRequirements/requirements-handbook-companion/blob/main/check-results.txt[]
 ====
 endif::[]
 
