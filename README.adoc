@@ -30,8 +30,8 @@ ifdef::env-github[]
 :caution-caption: :fire:
 :warning-caption: :warning:
 :check: :green_book:
-:bug: icon:books[]
-:missing: icon:closed_book[]
+:bug: :orange_book:
+:missing: :closed_book:
 endif::[]
 //-------------------------------------
 
