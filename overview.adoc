@@ -1,10 +1,13 @@
-= Overview of the method
+= Overview of {method}
 //------------------------- configuration
 :imagesdir: images
 :icons: font
 :toc:
 :lang: us
 :numbered:
+//:xrefstyle: full
+:xrefstyle: short
+//:xrefstyle: basic
 
 :method: pass:[<b>PEGS</b>]
 ifdef::pdf-backend[]
@@ -29,17 +32,40 @@ endif::[]
 WARNING: Work in progress!
 
 This chapter is an overview of {method}.
-Its aims at making this companion book self-content.
+It aims at making this companion book self-content.
 We highly recommend, for more details and a full description of the subtleties of {method}, to read the corresponding {hb-pdf}[handbook].
+Besides, this chapter does not cover the following aspects of {method} that {hb-pdf}[handbook] fully addresses:
 
+- General principles of requirements (see {hb-pdf}[handbook], chapter 2)
+- Quality criteria for requirements (see {hb-pdf}[handbook], chapter 4)
+- How to write requirements (see {hb-pdf}[handbook], chapter 6)
+- Completeness (see {hb-pdf}[handbook], chapter 11)
+- Verification (see {hb-pdf}[handbook], chapter 12)
 
+== Basic principles
+
+[[logo]]
 .The {method} logo
 image::pegs.png[]
 
+{method} takes its name from the proposed organization of requirements in four books (<<structure>> will detail this books' structure): 
+
+Process:: dedicated to...
+Environment::
+Goals::
+System::
+Bla
+
+NOTE: All this document will follow, as much as possible, the color convention illustrated by the logo (see <<logo>>).
+
+
+[[structure]]
 == Overall structure
 
 .The four books of requirements
 image::classification.svg[]
+
+NOTE: This structure can be used to organize a document in books, but also requirements in packages (for example in <<templates,SysML>>) or in folders (for example in a spreadsheet).
 
 == Links between the four PEGS
 

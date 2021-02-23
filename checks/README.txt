@@ -1,7 +1,7 @@
 
 FILE: README.adoc
 [✓] http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf
-[~] http://requirements-handbook.org/
+[/] http://requirements-handbook.org/
 [✓] https://docs.google.com/document/d/1HrWCRzyW_iTf1QXFFzEoDvvc66IzMCDb3uXGS5GRWz8/edit?usp=sharing
 [✓] https://github.com/FormalRequirements/requirements-handbook-companion
 [✓] https://FormalRequirements.github.io/requirements-handbook-companion
@@ -20,3 +20,5 @@ FILE: README.adoc
 [✓] https://github.com/FormalRequirements/companionRequirements
 [✓] https://github.com/jpeisenbarth/SRS-Tex
 [✓] https://github.com/FormalRequirements/requirements-handbook-companion/blob/main/check-results.txt
+
+20 links checked.

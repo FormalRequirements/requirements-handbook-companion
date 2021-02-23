@@ -448,15 +448,16 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel1">
 <li><a href="#_disclaimer">1. Disclaimer</a></li>
 <li><a href="#_context">2. Context</a></li>
-<li><a href="#_overview_of_the_method">3. Overview of the method</a>
+<li><a href="#_overview_of_pegs">3. Overview of <b>PEGS</b></a>
 <ul class="sectlevel2">
-<li><a href="#_overall_structure">3.1. Overall structure</a></li>
-<li><a href="#_links_between_the_four_pegs">3.2. Links between the four PEGS</a></li>
-<li><a href="#_the_lifecycle_model">3.3. The lifecycle model</a></li>
+<li><a href="#_basic_principles">3.1. Basic principles</a></li>
+<li><a href="#structure">3.2. Overall structure</a></li>
+<li><a href="#_links_between_the_four_pegs">3.3. Links between the four PEGS</a></li>
+<li><a href="#_the_lifecycle_model">3.4. The lifecycle model</a></li>
 </ul>
 </li>
 <li><a href="#_case_studies">4. Case studies</a></li>
-<li><a href="#_book_templates">5. Book templates</a></li>
+<li><a href="#templates">5. Book templates</a></li>
 <li><a href="#_references">References</a></li>
 <li><a href="#_appendices">Appendices</a>
 <ul class="sectlevel2">
@@ -551,7 +552,7 @@ It serves as the basis for the future Handbook&#8217;s site: <a href="http://req
 </div>
 </div>
 <div class="sect1">
-<h2 id="_overview_of_the_method">3. Overview of the method</h2>
+<h2 id="_overview_of_pegs">3. Overview of <b>PEGS</b></h2>
 <div class="sectionbody">
 <div class="admonitionblock warning">
 <table>
@@ -567,26 +568,90 @@ Work in progress!
 </div>
 <div class="paragraph">
 <p>This chapter is an overview of <b>PEGS</b>.
-Its aims at making this companion book self-content.
-We highly recommend, for more details and a full description of the subtleties of <b>PEGS</b>, to read the corresponding <a href="http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf">handbook</a>.</p>
+It aims at making this companion book self-content.
+We highly recommend, for more details and a full description of the subtleties of <b>PEGS</b>, to read the corresponding <a href="http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf">handbook</a>.
+Besides, this chapter does not cover the following aspects of <b>PEGS</b> that <a href="http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf">handbook</a> fully addresses:</p>
 </div>
-<div class="imageblock">
+<div class="ulist">
+<ul>
+<li>
+<p>General principles of requirements (see <a href="http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf">handbook</a>, chapter 2)</p>
+</li>
+<li>
+<p>Quality criteria for requirements (see <a href="http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf">handbook</a>, chapter 4)</p>
+</li>
+<li>
+<p>How to write requirements (see <a href="http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf">handbook</a>, chapter 6)</p>
+</li>
+<li>
+<p>Completeness (see <a href="http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf">handbook</a>, chapter 11)</p>
+</li>
+<li>
+<p>Verification (see <a href="http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf">handbook</a>, chapter 12)</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_basic_principles">3.1. Basic principles</h3>
+<div id="logo" class="imageblock">
 <div class="content">
 <img src="images/pegs.png" alt="pegs">
 </div>
 <div class="title">Figure 1. The <b>PEGS</b> logo</div>
 </div>
+<div class="paragraph">
+<p><b>PEGS</b> takes its name from the proposed organization of requirements in four books (<a href="#structure">Section 3.2</a> will detail this books' structure):</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Process</dt>
+<dd>
+<p>dedicated to&#8230;&#8203;</p>
+</dd>
+<dt class="hdlist1">Environment</dt>
+<dt class="hdlist1">Goals</dt>
+<dt class="hdlist1">System</dt>
+<dd>
+<p>Bla</p>
+</dd>
+</dl>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+All this document will follow, as much as possible, the color convention illustrated by the logo (see <a href="#logo">Figure 1</a>).
+</td>
+</tr>
+</table>
+</div>
+</div>
 <div class="sect2">
-<h3 id="_overall_structure">3.1. Overall structure</h3>
+<h3 id="structure">3.2. Overall structure</h3>
 <div class="imageblock">
 <div class="content">
 <img src="images/classification.svg" alt="classification">
 </div>
 <div class="title">Figure 2. The four books of requirements</div>
 </div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+This structure can be used to organize a document in books, but also requirements in packages (for example in <a href="#templates">SysML</a>) or in folders (for example in a spreadsheet).
+</td>
+</tr>
+</table>
+</div>
 </div>
 <div class="sect2">
-<h3 id="_links_between_the_four_pegs">3.2. Links between the four PEGS</h3>
+<h3 id="_links_between_the_four_pegs">3.3. Links between the four PEGS</h3>
 <div class="imageblock">
 <div class="content">
 <img src="images/links.svg" alt="links">
@@ -601,7 +666,7 @@ We highly recommend, for more details and a full description of the subtleties o
 </div>
 </div>
 <div class="sect2">
-<h3 id="_the_lifecycle_model">3.3. The lifecycle model</h3>
+<h3 id="_the_lifecycle_model">3.4. The lifecycle model</h3>
 <div class="imageblock">
 <div class="content">
 <img src="images/lifecycle.svg" alt="lifecycle">
@@ -645,7 +710,7 @@ Work in progress
 </div>
 </div>
 <div class="sect1">
-<h2 id="_book_templates">5. Book templates</h2>
+<h2 id="templates">5. Book templates</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>We provide a set of Book templates in this companion web site to help you apply <b>PEGS</b> and organize your requirements.
@@ -676,6 +741,9 @@ Work in progress
 </li>
 <li>
 <p><a href="githubImpl.adoc">GitHub</a></p>
+</li>
+<li>
+<p>SysML</p>
 </li>
 </ol>
 </div>
@@ -771,15 +839,15 @@ Work in progress
 <div class="sect3">
 <h4 id="_urls">URLs</h4>
 <details>
-<summary class="title">Checking URLs result (last update: 2021-02-20):</summary>
+<summary class="title">Checking URLs result (last update: 2021-02-22):</summary>
 <div class="content">
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" data-lang="shell">Sam 20 fév 2021 15:21:51 CET
+<pre class="highlight"><code class="language-shell" data-lang="shell">Lun 22 fév 2021 10:48:30 CET
 
 FILE: README.adoc
 [✓] http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf
-[~] http://requirements-handbook.org/
+[/] http://requirements-handbook.org/
 [✓] https://docs.google.com/document/d/1HrWCRzyW_iTf1QXFFzEoDvvc66IzMCDb3uXGS5GRWz8/edit?usp=sharing
 [✓] https://github.com/FormalRequirements/requirements-handbook-companion
 [✓] https://FormalRequirements.github.io/requirements-handbook-companion
@@ -798,6 +866,8 @@ FILE: README.adoc
 [✓] https://github.com/FormalRequirements/companionRequirements
 [✓] https://github.com/jpeisenbarth/SRS-Tex
 [✓] https://github.com/FormalRequirements/requirements-handbook-companion/blob/main/check-results.txt
+
+20 links checked.
 
 FILE: githubImpl.adoc
 [✓] http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf
@@ -822,7 +892,7 @@ FILE: overview.adoc
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2021-02-20 15:21:38 +0100
+Last updated 2021-02-22 10:47:58 +0100
 </div>
 </div>
 </body>

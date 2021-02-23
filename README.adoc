@@ -5,6 +5,9 @@
 :toc: left
 :numbered:
 :favicon: images/pegs.png
+//:xrefstyle: full
+:xrefstyle: short
+//:xrefstyle: basic
 
 :method: pass:[<b>PEGS</b>]
 ifdef::pdf-backend[]
@@ -99,6 +102,7 @@ WARNING: Work in progress
 . This Companion Book' requirements (see the dedicated repo https://github.com/FormalRequirements/companionRequirements[here]) 
 
 
+[[templates]]
 == Book templates
 
 We provide a set of Book templates in this companion web site to help you apply {method} and organize your requirements.
@@ -110,6 +114,7 @@ WARNING: Work in progress
 . Google Doc (see {cb-url}[this example] for now)
 . LaTeX (see https://github.com/jpeisenbarth/SRS-Tex[IEEE example])
 . link:githubImpl.adoc[GitHub] 
+. SysML
 
 .{check} Corresponding Requirement
 [%collapsible]
