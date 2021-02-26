@@ -1,5 +1,6 @@
 {
     "ignorePatterns": [
+        { "pattern": "http://P.1" },
         { "pattern": "http://requirements-handbook.org/" },
         { "pattern": "^https://github.com/FormalRequirements/requirements-handbook/workflows/Check%20Markdown%20links/badge.svg" }
     ]

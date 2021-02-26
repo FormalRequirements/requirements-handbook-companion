@@ -18,8 +18,9 @@ endif::[]
 :hb-url: http://requirements-handbook.org/
 :cb-url: https://docs.google.com/document/d/1HrWCRzyW_iTf1QXFFzEoDvvc66IzMCDb3uXGS5GRWz8/edit?usp=sharing
 :github-repo: https://github.com/FormalRequirements/requirements-handbook-companion
-:github-io: https://FormalRequirements.github.io/requirements-handbook-companion
+:github-io: https://P.1 Rolesformalrequirements.github.io/requirements-handbook-companion-companion
 :companionURL: https://formalrequirements.github.io/companionRequirements
+:companion-git: https://github.com/formalrequirements/companionRequirements
 // ICONS
 :check: icon:check-circle[]
 :bug: icon:bug[]
@@ -121,6 +122,33 @@ WARNING: Work in progress
 ====
 This section satisfies {companionURL}/#g31[this requirement].
 ====
+
+== Verification rules
+
+This section provides some implementation examples of the verification rules described in the {Handbook}.
+
+=== Books mutual references
+
+One of the requirements for this book, taken from the {Handbook}, says (see {companionURL}#s6-mutualRefs[here]):
+
+[quote]
+The books may reference each other, but not arbitrarily.
+
+The <<mutualRefs>> shows which books may refer to which. 
+
+[[mutualRefs]]
+.Possible references between the books
+image::https://raw.githubusercontent.com/FormalRequirements/requirements-handbook-companion/9f100f121c15772b07cc2bdc3d25afee587784fe/images/links.svg[Reference links, width=40%, pdfwidth=40%]
+
+From this mutual references rule, a concrete implementation, written in Gherkin, enforces its application:
+
+.Verification rule as a BDD feature (see {companion-git}/blob/main/features/book.feature[this file])
+image::book-feature.png[Book feature]
+
+Here is the execution, using `cucmumber`, of the corresponding tests, showing that they all pass (green lines):
+
+.tests execution
+image::cucumber.png[Cucumber execution]
 
 :numbered!:
 == References

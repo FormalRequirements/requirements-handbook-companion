@@ -1,11 +1,12 @@
 
 FILE: README.adoc
 [✓] http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf
-[/] http://requirements-handbook.org/
+[~] http://requirements-handbook.org/
 [✓] https://docs.google.com/document/d/1HrWCRzyW_iTf1QXFFzEoDvvc66IzMCDb3uXGS5GRWz8/edit?usp=sharing
 [✓] https://github.com/FormalRequirements/requirements-handbook-companion
-[✓] https://FormalRequirements.github.io/requirements-handbook-companion
+[✖] https://P.1
 [✓] https://formalrequirements.github.io/companionRequirements
+[✓] https://github.com/formalrequirements/companionRequirements
 [✓] https://gist.github.com/rxaviers/7360908
 [✓] https://github.com/FormalRequirements/requirements-handbook-companion/workflows/Check%20URLs/badge.svg
 [✓] https://github.com/FormalRequirements/requirements-handbook-companion/actions
@@ -19,6 +20,5 @@ FILE: README.adoc
 [✓] https://github.com/ddd-by-examples/library?ref=hackernoon.com#domain-description
 [✓] https://github.com/FormalRequirements/companionRequirements
 [✓] https://github.com/jpeisenbarth/SRS-Tex
+[✓] https://raw.githubusercontent.com/FormalRequirements/requirements-handbook-companion/9f100f121c15772b07cc2bdc3d25afee587784fe/images/links.svg
 [✓] https://github.com/FormalRequirements/requirements-handbook-companion/blob/main/check-results.txt
-
-20 links checked.

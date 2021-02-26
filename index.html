@@ -458,6 +458,11 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li><a href="#_case_studies">4. Case studies</a></li>
 <li><a href="#templates">5. Book templates</a></li>
+<li><a href="#_verification_rules">6. Verification rules</a>
+<ul class="sectlevel2">
+<li><a href="#_books_mutual_references">6.1. Books mutual references</a></li>
+</ul>
+</li>
 <li><a href="#_references">References</a></li>
 <li><a href="#_appendices">Appendices</a>
 <ul class="sectlevel2">
@@ -758,6 +763,52 @@ Work in progress
 </div>
 </div>
 <div class="sect1">
+<h2 id="_verification_rules">6. Verification rules</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This section provides some implementation examples of the verification rules described in the {Handbook}.</p>
+</div>
+<div class="sect2">
+<h3 id="_books_mutual_references">6.1. Books mutual references</h3>
+<div class="paragraph">
+<p>One of the requirements for this book, taken from the {Handbook}, says (see <a href="https://formalrequirements.github.io/companionRequirements#s6-mutualRefs">here</a>):</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+The books may reference each other, but not arbitrarily.
+</blockquote>
+</div>
+<div class="paragraph">
+<p>The <a href="#mutualRefs">Figure 6</a> shows which books may refer to which.</p>
+</div>
+<div id="mutualRefs" class="imageblock">
+<div class="content">
+<img src="https://raw.githubusercontent.com/FormalRequirements/requirements-handbook-companion/9f100f121c15772b07cc2bdc3d25afee587784fe/images/links.svg" alt="Reference links" width="40%">
+</div>
+<div class="title">Figure 6. Possible references between the books</div>
+</div>
+<div class="paragraph">
+<p>From this mutual references rule, a concrete implementation, written in Gherkin, enforces its application:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/book-feature.png" alt="Book feature">
+</div>
+<div class="title">Figure 7. Verification rule as a BDD feature (see <a href="https://github.com/formalrequirements/companionRequirements/blob/main/features/book.feature">this file</a>)</div>
+</div>
+<div class="paragraph">
+<p>Here is the execution, using <code>cucmumber</code>, of the corresponding tests, showing that they all pass (green lines):</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/cucumber.png" alt="Cucumber execution">
+</div>
+<div class="title">Figure 8. tests execution</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
 <h2 id="_references">References</h2>
 <div class="sectionbody">
 <div class="ulist">
@@ -839,19 +890,20 @@ Work in progress
 <div class="sect3">
 <h4 id="_urls">URLs</h4>
 <details>
-<summary class="title">Checking URLs result (last update: 2021-02-22):</summary>
+<summary class="title">Checking URLs result (last update: 2021-02-26):</summary>
 <div class="content">
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" data-lang="shell">Lun 22 fév 2021 10:48:30 CET
+<pre class="highlight"><code class="language-shell" data-lang="shell">Ven 26 fév 2021 11:11:04 CET
 
 FILE: README.adoc
 [✓] http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf
-[/] http://requirements-handbook.org/
+[~] http://requirements-handbook.org/
 [✓] https://docs.google.com/document/d/1HrWCRzyW_iTf1QXFFzEoDvvc66IzMCDb3uXGS5GRWz8/edit?usp=sharing
 [✓] https://github.com/FormalRequirements/requirements-handbook-companion
-[✓] https://FormalRequirements.github.io/requirements-handbook-companion
+[✖] https://P.1
 [✓] https://formalrequirements.github.io/companionRequirements
+[✓] https://github.com/formalrequirements/companionRequirements
 [✓] https://gist.github.com/rxaviers/7360908
 [✓] https://github.com/FormalRequirements/requirements-handbook-companion/workflows/Check%20URLs/badge.svg
 [✓] https://github.com/FormalRequirements/requirements-handbook-companion/actions
@@ -865,9 +917,8 @@ FILE: README.adoc
 [✓] https://github.com/ddd-by-examples/library?ref=hackernoon.com#domain-description
 [✓] https://github.com/FormalRequirements/companionRequirements
 [✓] https://github.com/jpeisenbarth/SRS-Tex
+[✓] https://raw.githubusercontent.com/FormalRequirements/requirements-handbook-companion/9f100f121c15772b07cc2bdc3d25afee587784fe/images/links.svg
 [✓] https://github.com/FormalRequirements/requirements-handbook-companion/blob/main/check-results.txt
-
-20 links checked.
 
 FILE: githubImpl.adoc
 [✓] http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf
@@ -877,10 +928,8 @@ FILE: githubImpl.adoc
 
 FILE: overview.adoc
 [✓] http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf
-[/] http://requirements-handbook.org/
-[✓] https://docs.google.com/document/d/1HrWCRzyW_iTf1QXFFzEoDvvc66IzMCDb3uXGS5GRWz8/edit?usp=sharing
-
-3 links checked.</code></pre>
+[~] http://requirements-handbook.org/
+[✓] https://docs.google.com/document/d/1HrWCRzyW_iTf1QXFFzEoDvvc66IzMCDb3uXGS5GRWz8/edit?usp=sharing</code></pre>
 </div>
 </div>
 </div>
@@ -892,7 +941,7 @@ FILE: overview.adoc
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2021-02-22 10:47:58 +0100
+Last updated 2021-02-26 11:08:10 +0100
 </div>
 </div>
 </body>
