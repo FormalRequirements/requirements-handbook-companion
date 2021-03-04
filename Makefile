@@ -15,7 +15,7 @@ README.html: README.adoc $(CHECK_RES) $(DIAGRAMS)
 	asciidoctor -a toc=left README.adoc
 
 README.pdf: README.adoc $(CHECK_RES)  $(DIAGRAMS)
-	asciidoctor-pdf -a pdf-backend README.adoc
+	asciidoctor-pdf -a allow-uri-read -a pdf-backend README.adoc
 
 images/%.png: images/%.plantuml
 	@echo '==> Compiling plantUML files to generate PNG'

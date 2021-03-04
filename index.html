@@ -559,6 +559,12 @@ It serves as the basis for the future Handbook&#8217;s site: <a href="http://req
 <div class="sect1">
 <h2 id="_overview_of_pegs">3. Overview of <b>PEGS</b></h2>
 <div class="sectionbody">
+<div class="paragraph">
+<p>:Handbook}.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf
+:hb-title: Handbook of requirements and business analysis
+:hb-url: <a href="http://requirements-handbook.org/" class="bare">http://requirements-handbook.org/</a>
+:cb-url: <a href="https://docs.google.com/document/d/1HrWCRzyW_iTf1QXFFzEoDvvc66IzMCDb3uXGS5GRWz8/edit?usp=sharing" class="bare">https://docs.google.com/document/d/1HrWCRzyW_iTf1QXFFzEoDvvc66IzMCDb3uXGS5GRWz8/edit?usp=sharing</a></p>
+</div>
 <div class="admonitionblock warning">
 <table>
 <tr>
@@ -574,30 +580,32 @@ Work in progress!
 <div class="paragraph">
 <p>This chapter is an overview of <b>PEGS</b>.
 It aims at making this companion book self-content.
-We highly recommend, for more details and a full description of the subtleties of <b>PEGS</b>, to read the corresponding <a href="http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf">handbook</a>.
-Besides, this chapter does not cover the following aspects of <b>PEGS</b> that <a href="http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf">handbook</a> fully addresses:</p>
+We highly recommend, for more details and a full description of the subtleties of <b>PEGS</b>, to read the corresponding <a href="http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf">Handbook</a>.
+Besides, this chapter does not cover the following aspects of <b>PEGS</b> that the <a href="http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf">Handbook</a> fully addresses:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>General principles of requirements (see <a href="http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf">handbook</a>, chapter 2)</p>
+<p>General principles of requirements (see <a href="http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf">Handbook</a>, chapter 2)</p>
 </li>
 <li>
-<p>Quality criteria for requirements (see <a href="http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf">handbook</a>, chapter 4)</p>
+<p>Quality criteria for requirements (see <a href="http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf">Handbook</a>, chapter 4)</p>
 </li>
 <li>
-<p>How to write requirements (see <a href="http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf">handbook</a>, chapter 6)</p>
+<p>How to write requirements (see <a href="http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf">Handbook</a>, chapter 6)</p>
 </li>
 <li>
-<p>Completeness (see <a href="http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf">handbook</a>, chapter 11)</p>
+<p>Completeness (see <a href="http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf">Handbook</a>, chapter 11)</p>
 </li>
 <li>
-<p>Verification (see <a href="http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf">handbook</a>, chapter 12)</p>
+<p>Verification (see <a href="http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf">Handbook</a>, chapter 12)</p>
 </li>
 </ul>
 </div>
 <div class="sect2">
 <h3 id="_basic_principles">3.1. Basic principles</h3>
+<div class="sect3">
+<h4 id="_universe_of_discourse">3.1.1. Universe of discourse</h4>
 <div id="logo" class="imageblock">
 <div class="content">
 <img src="images/pegs.png" alt="pegs">
@@ -605,19 +613,25 @@ Besides, this chapter does not cover the following aspects of <b>PEGS</b> that <
 <div class="title">Figure 1. The <b>PEGS</b> logo</div>
 </div>
 <div class="paragraph">
-<p><b>PEGS</b> takes its name from the proposed organization of requirements in four books (<a href="#structure">Section 3.2</a> will detail this books' structure):</p>
+<p><b>PEGS</b> takes its name as a reminder of the four dimensions of requirements, leading to the organization of requirements in four books (<a href="#structure">Section 3.2</a> will detail this books' structure):</p>
 </div>
 <div class="dlist">
 <dl>
-<dt class="hdlist1">Process</dt>
-<dd>
-<p>dedicated to&#8230;&#8203;</p>
-</dd>
-<dt class="hdlist1">Environment</dt>
 <dt class="hdlist1">Goals</dt>
+<dd>
+<p>the needs of the target organization, which the <strong>system</strong> will address.</p>
+</dd>
 <dt class="hdlist1">System</dt>
 <dd>
-<p>Bla</p>
+<p>a set of related artifacts, devised to help meet certain <strong>goals</strong>.</p>
+</dd>
+<dt class="hdlist1">Project</dt>
+<dd>
+<p>the set of human processes involved in the planning, construction, revision and operation of the <strong>system</strong>.</p>
+</dd>
+<dt class="hdlist1">Environment</dt>
+<dd>
+<p>the set of entities external to the <strong>project</strong> and <strong>system</strong> but with the potential to affect the <strong>goals</strong>, <strong>project</strong> or <strong>system</strong> or be affected by them.</p>
 </dd>
 </dl>
 </div>
@@ -632,6 +646,13 @@ All this document will follow, as much as possible, the color convention illustr
 </td>
 </tr>
 </table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_kind_of_requirements">3.1.2. Kind of requirements</h4>
+<div class="paragraph">
+<p>Property, statement, &#8230;&#8203;</p>
+</div>
 </div>
 </div>
 <div class="sect2">
@@ -649,7 +670,7 @@ All this document will follow, as much as possible, the color convention illustr
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-This structure can be used to organize a document in books, but also requirements in packages (for example in <a href="#templates">SysML</a>) or in folders (for example in a spreadsheet).
+This structure can influence the organization of a document in books. It can also be lead to requirements packages (e.g., in <a href="#templates">SysML</a>) or folders (e.g., in a spreadsheet).
 </td>
 </tr>
 </table>
@@ -766,12 +787,12 @@ Work in progress
 <h2 id="_verification_rules">6. Verification rules</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>This section provides some implementation examples of the verification rules described in the {Handbook}.</p>
+<p>This section provides some implementation examples of the verification rules described in the <a href="http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf">Handbook</a>.</p>
 </div>
 <div class="sect2">
 <h3 id="_books_mutual_references">6.1. Books mutual references</h3>
 <div class="paragraph">
-<p>One of the requirements for this book, taken from the {Handbook}, says (see <a href="https://formalrequirements.github.io/companionRequirements#s6-mutualRefs">here</a>):</p>
+<p>One of the requirements for this book, taken from the <a href="http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf">Handbook</a>, says (see <a href="https://formalrequirements.github.io/companionRequirements#s6-mutualRefs">here</a>):</p>
 </div>
 <div class="quoteblock">
 <blockquote>
@@ -890,18 +911,18 @@ The books may reference each other, but not arbitrarily.
 <div class="sect3">
 <h4 id="_urls">URLs</h4>
 <details>
-<summary class="title">Checking URLs result (last update: 2021-02-26):</summary>
+<summary class="title">Checking URLs result (last update: 2021-03-04):</summary>
 <div class="content">
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-shell" data-lang="shell">Ven 26 fév 2021 11:11:04 CET
+<pre class="highlight"><code class="language-shell" data-lang="shell">Jeu 4 mar 2021 15:17:38 CET
 
 FILE: README.adoc
 [✓] http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf
-[~] http://requirements-handbook.org/
+[/] http://requirements-handbook.org/
 [✓] https://docs.google.com/document/d/1HrWCRzyW_iTf1QXFFzEoDvvc66IzMCDb3uXGS5GRWz8/edit?usp=sharing
 [✓] https://github.com/FormalRequirements/requirements-handbook-companion
-[✖] https://P.1
+[✓] https://formalrequirements.github.io/requirements-handbook-companion
 [✓] https://formalrequirements.github.io/companionRequirements
 [✓] https://github.com/formalrequirements/companionRequirements
 [✓] https://gist.github.com/rxaviers/7360908
@@ -920,16 +941,21 @@ FILE: README.adoc
 [✓] https://raw.githubusercontent.com/FormalRequirements/requirements-handbook-companion/9f100f121c15772b07cc2bdc3d25afee587784fe/images/links.svg
 [✓] https://github.com/FormalRequirements/requirements-handbook-companion/blob/main/check-results.txt
 
+22 links checked.
+
 FILE: githubImpl.adoc
 [✓] http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf
-[✖] http://requirements-handbook.org/
+[/] http://requirements-handbook.org/
 [✓] https://docs.google.com/document/d/1HrWCRzyW_iTf1QXFFzEoDvvc66IzMCDb3uXGS5GRWz8/edit?usp=sharing
 [✓] https://github.com
 
+4 links checked.
+
 FILE: overview.adoc
-[✓] http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf
-[~] http://requirements-handbook.org/
-[✓] https://docs.google.com/document/d/1HrWCRzyW_iTf1QXFFzEoDvvc66IzMCDb3uXGS5GRWz8/edit?usp=sharing</code></pre>
+[/] http://requirements-handbook.org/
+[✓] https://docs.google.com/document/d/1HrWCRzyW_iTf1QXFFzEoDvvc66IzMCDb3uXGS5GRWz8/edit?usp=sharing
+
+2 links checked.</code></pre>
 </div>
 </div>
 </div>
@@ -941,7 +967,7 @@ FILE: overview.adoc
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2021-02-26 11:08:10 +0100
+Last updated 2021-03-04 09:39:24 +0100
 </div>
 </div>
 </body>

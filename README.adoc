@@ -14,11 +14,12 @@ ifdef::pdf-backend[]
 :method: PEGS
 endif::[]
 :hb-pdf: http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf
+:Handbook: {hb-pdf}[Handbook]
 :hb-title: Handbook of requirements and business analysis
 :hb-url: http://requirements-handbook.org/
 :cb-url: https://docs.google.com/document/d/1HrWCRzyW_iTf1QXFFzEoDvvc66IzMCDb3uXGS5GRWz8/edit?usp=sharing
 :github-repo: https://github.com/FormalRequirements/requirements-handbook-companion
-:github-io: https://P.1 Rolesformalrequirements.github.io/requirements-handbook-companion-companion
+:github-io: https://formalrequirements.github.io/requirements-handbook-companion
 :companionURL: https://formalrequirements.github.io/companionRequirements
 :companion-git: https://github.com/formalrequirements/companionRequirements
 // ICONS
