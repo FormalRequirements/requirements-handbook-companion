@@ -13,7 +13,7 @@
 ifdef::pdf-backend[]
 :method: PEGS
 endif::[]
-:Handbook}.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf
+:Handbook: http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf
 :hb-title: Handbook of requirements and business analysis
 :hb-url: http://requirements-handbook.org/
 :cb-url: https://docs.google.com/document/d/1HrWCRzyW_iTf1QXFFzEoDvvc66IzMCDb3uXGS5GRWz8/edit?usp=sharing
@@ -64,7 +64,28 @@ NOTE: All this document will follow, as much as possible, the color convention i
 
 === Kind of requirements
 
-Property, statement, ...
+A requirement is a relevant statement about a project, environment, goal, or system.
+The {Handbook} defines important notions such as property, statements, relevance, or stakeholders.
+
+:component: 💻
+:responsibility: icon:chalkboard-teacher[]
+:limit:
+:role:
+
+//----------------------------------------------
+[cols="1,2,4",options="header"]
+|===
+| Icon              | Kind              | Quick description 
+//----------------------------------------------
+| {component}       | Component        | 
+| {responsibility}  | Responsibility   | 
+| {limit}           | Limit            | 
+| {role}            | Role             | 
+|=== 
+//----------------------------------------------
+
+
+To describe the kinds of requirements, let us start with the one that may arise in all four PEGS dimensions: component, responsibility, limit and role.
 
 [[structure]]
 == Overall structure
