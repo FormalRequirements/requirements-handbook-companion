@@ -1,4 +1,19 @@
-= Overview of {method}
+= Overview of the approach
+
+// icons for GitHub https://gist.github.com/rxaviers/7360908
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+:check: :green_book:
+:bug: :orange_book:
+:missing: :closed_book:
+:method: PEGS
+endif::[]
+//-------------------------------------
+
 //------------------------- configuration
 :imagesdir: images
 :icons: font
@@ -18,21 +33,7 @@ endif::[]
 :hb-url: http://requirements-handbook.org/
 :cb-url: https://docs.google.com/document/d/1HrWCRzyW_iTf1QXFFzEoDvvc66IzMCDb3uXGS5GRWz8/edit?usp=sharing
 
-// icons for GitHub
-ifdef::env-github[]
-// icons for GitHub https://gist.github.com/rxaviers/7360908
-ifdef::env-github[]
-:tip-caption: :bulb:
-:note-caption: :information_source:
-:important-caption: :heavy_exclamation_mark:
-:caution-caption: :fire:
-:warning-caption: :warning:
-:check: :green_book:
-:bug: :orange_book:
-:missing: :closed_book:
-:method: PEGS
-endif::[]endif::[]
-//-------------------------------------
+
 
 
 WARNING: Work in progress!
@@ -74,9 +75,9 @@ A requirement is a relevant statement about a project, environment, goal, or sys
 The {Handbook} defines important notions such as property, statements, relevance, or stakeholders.
 
 :component: 💻
-:responsibility: icon:chalkboard-teacher[]
-:limit:
-:role:
+:responsibility: 👑
+:limit: ✂️ 
+:role: 👷
 
 //----------------------------------------------
 [cols="1,2,4",options="header"]
