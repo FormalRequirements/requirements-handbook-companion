@@ -1,0 +1,27 @@
+//--------------------------- Glossary & Definitions
+// URLS
+:companionURL: https://formalrequirements.github.io/requirements-handbook-companion
+:HandbookPDF: http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf
+:companionGit: https://github.com/FormalRequirements/requirements-handbook
+:Roborace: https://formalrequirements.github.io/roboraceRequirements/[Roborace]
+
+// ICONS
+:check: icon:check-circle[]
+:bug: icon:bug[]
+:missing: icon:times-circle[]
+
+// GLOSSARY ENTRIES
+:companion: <<companion, Companion Book>>
+:Handbook:  <<Handbook, Handbook>>
+:method: pass:[<b>PEGS</b>]
+ifdef::pdf-backend[]
+:method: PEGS
+endif::[]
+
+// PERSONS ENTRIES
+:an: Alexandr Naumchev
+:bm: Bertrand Meyer
+:fg: Florian Galinier
+:jmb: https://jmbruel.netlify.app[J.-M. Bruel]
+:mn: Marya Naumchev
+:se: Sophie Ebersold

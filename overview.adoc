@@ -20,12 +20,18 @@ endif::[]
 
 // icons for GitHub
 ifdef::env-github[]
+// icons for GitHub https://gist.github.com/rxaviers/7360908
+ifdef::env-github[]
 :tip-caption: :bulb:
 :note-caption: :information_source:
 :important-caption: :heavy_exclamation_mark:
 :caution-caption: :fire:
 :warning-caption: :warning:
-endif::[]
+:check: :green_book:
+:bug: :orange_book:
+:missing: :closed_book:
+:method: PEGS
+endif::[]endif::[]
 //-------------------------------------
 
 

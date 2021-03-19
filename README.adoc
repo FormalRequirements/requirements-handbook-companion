@@ -9,6 +9,7 @@
 :xrefstyle: short
 //:xrefstyle: basic
 
+//------------------------- definitions
 :method: pass:[<b>PEGS</b>]
 ifdef::pdf-backend[]
 :method: PEGS
@@ -37,6 +38,7 @@ ifdef::env-github[]
 :check: :green_book:
 :bug: :orange_book:
 :missing: :closed_book:
+:method: PEGS
 endif::[]
 //-------------------------------------
 
