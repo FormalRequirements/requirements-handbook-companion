@@ -72,9 +72,9 @@ Conventions for this book:
 |===
 | Icon | Signification
 //----------------------------------------------
-| {check}  | A precisely referenced requirement this section is satisfying
-| {bug}    | A precisely referenced requirement this section is related to
-| {missing}| No corresponding requirement for this section (should be fixed)
+| {check}  | A precisely-referenced requirement this section is satisfying.
+| {bug}    | A precisely-referenced requirement this section is related to.
+| {missing}| No corresponding requirement for this section (should be fixed).
 |=== 
 //----------------------------------------------
 :numbered:
@@ -109,7 +109,7 @@ WARNING: Work in progress
 [[templates]]
 == Book templates
 
-We provide a set of Book templates in this companion web site to help you apply {method} and organize your requirements.
+We provide a set of Book templates in this companion website to help you apply {method} and organize your requirements.
 Here is the list of the available templates (feel free to link:CONTRIBUTING.adoc[contribute] by submitting additional templates):
 
 WARNING: Work in progress
@@ -148,7 +148,7 @@ From this mutual references rule, a concrete implementation, written in Gherkin,
 .Verification rule as a BDD feature (see {companion-git}/blob/main/features/book.feature[this file])
 image::book-feature.png[Book feature]
 
-Here is the execution, using `cucmumber`, of the corresponding tests, showing that they all pass (green lines):
+Here is the execution, using `cucumber`, of the corresponding tests, showing that they all pass (green lines):
 
 .tests execution
 image::cucumber.png[Cucumber execution]
