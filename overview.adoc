@@ -74,11 +74,12 @@ NOTE: All this document will follow, as much as possible, the color convention i
 A requirement is a relevant statement about a project, environment, goal, or system.
 The {Handbook} defines important notions such as property, statements, relevance, or stakeholders.
 
+To describe the kinds of requirements, let us start with the one that may arise in all four PEGS dimensions: component, responsibility, limit and role.
+
 :component: 💻
 :responsibility: 👑
 :limit: ✂️ 
 :role: 👷
-
 //----------------------------------------------
 [cols="1,2,4",options="header"]
 |===
@@ -90,9 +91,6 @@ The {Handbook} defines important notions such as property, statements, relevance
 | {role}            | Role             | 
 |=== 
 //----------------------------------------------
-
-
-To describe the kinds of requirements, let us start with the one that may arise in all four PEGS dimensions: component, responsibility, limit and role.
 
 [[structure]]
 == Overall structure

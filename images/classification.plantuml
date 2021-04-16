@@ -31,17 +31,17 @@ package G as "Goals (G)" {
     class g1 as "G.1 Overall context and goals" <<Goals>>
     class g2 as "G.2 Current situation"  <<Goals>>
     class g3 as "G.3 Expected benefits"  <<Goals>>
-    class g4 as "G.4 System overview"  <<Goals>>
-    class g5 as "G.5 Limitations and exclusions" <<Goals>> 
-    class g6 as "G.6 Stakeholders"  <<Goals>>
-    class g7 as "G.7 Requirements sources"  <<Goals>>
+    class g4 as "G.4 Functionality overview"  <<Goals>>
+    class g5 as "G.5 High-level usage scenarios" <<Goals>> 
+    class g6 as "G.6 Limitations and exclusions"  <<Goals>>
+    class g7 as "G.7 Stakeholders and requirements sources"  <<Goals>>
 }
 
 package S as "System (S)" {
     class s1 as "S.1 Components" <<System>>
     class s2 as "S.2 Functionality" <<System>>
     class s3 as "S.3 Interfaces" <<System>>
-    class s4 as "S.4 Scenarios (uses case, user stories)" <<System>>
+    class s4 as "S.4 Detailed usage scenarios" <<System>>
     class s5 as "S.5 Prioritization" <<System>>
     class s6 as "S.6 Verification and acceptance criteria" <<System>>
 }
