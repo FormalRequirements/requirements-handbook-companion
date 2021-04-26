@@ -72,9 +72,9 @@ Conventions for this book:
 |===
 | Icon | Signification
 //----------------------------------------------
-| {check}  | A precisely-referenced requirement this section is satisfying.
-| {bug}    | A precisely-referenced requirement this section is related to.
-| {missing}| No corresponding requirement for this section (should be fixed).
+| {check}  | A precisely referenced requirement this section is satisfying
+| {bug}    | A precisely referenced requirement this section is related to
+| {missing}| No corresponding requirement for this section (should be fixed)
 |=== 
 //----------------------------------------------
 :numbered:
@@ -215,7 +215,7 @@ ifndef::env-github[]
 .Checking URLs result (last update: {localdate}):
 [%collapsible]
 ====
-[source,shell]
+[source, shell]
 --
 include::check-results.txt[]
 --
