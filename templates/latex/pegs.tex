@@ -1,4 +1,4 @@
-%Copyright 2020 Jean-Michel Bruel
+%Copyright 2021 Jean-Michel Bruel
 %This program is free template, under the terms of the attached License of this repo. 
 %Based on https://github.com/jpeisenbarth/SRS-Tex
 %Itself based on the code of Yiannis Lazarides
@@ -8,7 +8,8 @@
 %http://www.se.rit.edu/~emad/teaching/slides/srs_template_sep14.pdf
 %http://karlwiegers.com
 \documentclass{scrreprt}
-\usepackage{pegs}
+\usepackage{pegs}		% Specific command from Handbook
+\usepackage{minitoc}	% For table of content in chapters
 \usepackage{listings}
 \usepackage{underscore}
 \usepackage[bookmarks=true]{hyperref}
@@ -61,10 +62,9 @@
     \end{bfseries}
 \end{flushright}
 
-\tableofcontents
-
-
-\chapter*{Revision History}
+%===============================================================
+\chapter{Revision History}
+%===============================================================
 
 \begin{center}
     \begin{tabular}{|c|c|c|c|}
@@ -77,30 +77,100 @@
     \end{tabular}
 \end{center}
 
-\chapter*{Process}
+%===============================================================
+\dominitoc% Initialization
+\tableofcontents
+%===============================================================
+
+%===============================================================
+\chapter{Goals}
+\minitoc% Creating an actual minitoc
+%===============================================================
 
 \comment{This book is about...}
 
-\section*{P.1 Roles}
+\section{G.1 Overall context and goals}
 
 \comment{This section is about...}
 
-\section*{P.2 Personnel characteristics and constraints}
+\section{G.2 Current situation}
 
-\section*{P.3 Imposed technical choices}
+\section{G.3 Expected benefits}
 
-\section*{P.4 Schedule and milestones}
+\section{G.4 Functionality overview}
 
-\section*{P.5 Tasks and deliverables}
+\section{G.5 High-level usage scenarios}
 
-\section*{P.6 Risks and mitigation analysis}
+\section{G.6 Limitations and exclusions}
 
-\section*{P.7 Requirements process and report}
+\section{G.7 Stakeholders and requirements sources}
 
-\chapter*{Environment}
+%===============================================================
+\chapter{Environment}
+\minitoc% Creating an actual minitoc
+%===============================================================
 
-\chapter*{Goals}
+\comment{This book is about...}
 
-\chapter*{System}
+\section{E.1 Glossary}
 
+\comment{This section is about...}
+
+\section{E.2 Components}
+
+\section{E.3 Constraints}
+
+\section{E.4 Assumptions}
+
+\section{E.5 Effects}
+
+\section{E.6 Invariants}
+
+%===============================================================
+\chapter{System}
+\minitoc% Creating an actual minitoc
+%===============================================================
+
+\comment{This book is about...}
+
+\section{S.1 Components}
+
+\comment{This section is about...}
+
+\section{S.2 Functionality}
+
+\section{S.3 Interfaces}
+
+\section{S.4 Detailed usage scenarios}
+
+\section{S.5 Prioritization}
+
+\section{S.6 Verification and acceptance criteria}
+
+%===============================================================
+\chapter{Project}
+\minitoc% Creating an actual minitoc
+%===============================================================
+
+\comment{This book is about...}
+
+\section{P.1 Roles}
+
+\comment{This section is about...}
+
+\section{P.2 Personnel characteristics and constraints}
+
+\section{P.3 Imposed technical choices}
+
+\section{P.4 Schedule and milestones}
+
+\section{P.5 Tasks and deliverables}
+
+\section{P.6 Risks and mitigation analysis}
+
+\section{P.7 Requirements process and report}
+
+
+%===============================================================
 \end{document}
+%===============================================================
