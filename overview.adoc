@@ -28,7 +28,7 @@ endif::[]
 ifdef::pdf-backend[]
 :method: PEGS
 endif::[]
-:Handbook: http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf
+:Handbook: http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf[Handbook]
 :hb-title: Handbook of requirements and business analysis
 :hb-url: http://requirements-handbook.org/
 :cb-url: https://docs.google.com/document/d/1HrWCRzyW_iTf1QXFFzEoDvvc66IzMCDb3uXGS5GRWz8/edit?usp=sharing
@@ -74,6 +74,9 @@ NOTE: All this document will follow, as much as possible, the color convention i
 A requirement is a relevant statement about a project, environment, goal, or system.
 The {Handbook} defines important notions such as property, statements, relevance, or stakeholders.
 
+NOTE: Some kinds have special cases (e.g., _Role_ being a special case of _Responsibility_). In this book, we only consider main topics for simplicity. Refer to section 1.3 of the {Handbook} for more details.
+
+==== Requirements applying to all dimensions
 To describe the kinds of requirements, let us start with the one that may arise in all four PEGS dimensions: component, responsibility, limit and role.
 
 :component: 💻
@@ -85,10 +88,77 @@ To describe the kinds of requirements, let us start with the one that may arise 
 |===
 | Icon              | Kind              | Quick description 
 //----------------------------------------------
-| {component}       | Component        | 
-| {responsibility}  | Responsibility   | 
-| {limit}           | Limit            | 
-| {role}            | Role             | 
+| {component}       | Component        | Identification of a part
+| {responsibility}  | Responsibility   | Assignment of behavior or task to component
+| {limit}           | Limit            | Exclusion from scope of requirements
+|=== 
+//----------------------------------------------
+
+==== Requirements affecting goals
+
+WARNING: Rationale is not in the {handbook} => Question to Bertrand
+//----------------------------------------------
+[cols="1,2,4",options="header"]
+|===
+| Icon        | Kind        | Quick description 
+//----------------------------------------------
+| {goal}      | Goal        | Desired result for the target organization
+| {obstacle}  | Obstacle    | Goal describing a property to be overcome
+|=== 
+//----------------------------------------------
+
+TIP: If you are surprised to see _Obstacle_ but not _Rationale_, which often go together in other approaches (e.g. in SysML), this is because in the {Handbook}' classification, there is a special case of _Meta-requirement_, called _Justification_ that plays this role.
+
+==== Requirements on the project
+
+//----------------------------------------------
+[cols="1,2,4",options="header"]
+|===
+| Icon        | Kind              | Quick description 
+//----------------------------------------------
+| {task}      | Task        | Activity included in project
+| {product}   | Product     | Artifact needed or produced by a task
+|=== 
+//----------------------------------------------
+
+==== Requirements on the system
+
+//----------------------------------------------
+[cols="1,2,4",options="header"]
+|===
+| Icon              | Kind              | Quick description 
+//----------------------------------------------
+| {behavior}      | Behavior        | Property of the operation of the system
+|=== 
+//----------------------------------------------
+
+==== Requirements about the environment
+
+//----------------------------------------------
+[cols="1,2,4",options="header"]
+|===
+| Icon              | Kind              | Quick description 
+//----------------------------------------------
+| {constraint}      | Constraint        | Property imposed by environment
+| {assumption}  | Assumption    | Posited property of environment
+| {effect} | Effect      | Property of the environment affected by the system
+| {invariant} | Invariant   | Environment property that must be maintained 
+|=== 
+//----------------------------------------------
+
+
+
+==== Document description
+
+//----------------------------------------------
+[cols="1,2,4",options="header"]
+|===
+| Icon              | Kind              | Quick description 
+//----------------------------------------------
+| {lack}      | Lack        | Property that is not in requirements but should be
+| {noise}  | Noise    | Property that is in requirements but should not be
+| {meta} | Meta-requirement      | Property of requirements themselves (not of
+project, environment, goals or system)
 |=== 
 //----------------------------------------------
 
@@ -99,6 +169,32 @@ To describe the kinds of requirements, let us start with the one that may arise 
 image::classification.svg[]
 
 NOTE: This structure can influence the organization of a document in books. It can also be lead to requirements packages (e.g., in <<templates, SysML>>) or folders (e.g., in a spreadsheet).
+
+=== The four pegs
+
+TIP: Front and back matters...
+
+=== Goals
+
+==== G.1 Overall context and goals
+
+==== G.2 Current situation
+
+==== G.3 Expected benefits 
+
+==== G.4 Functionality overview
+
+==== G.5 High-level usage scenarios 
+
+==== G.6 Limitations and exclusions 
+
+==== G.7 Stakeholders and requirements sources
+
+=== Environment
+
+=== Project
+
+=== System
 
 == Links between the four PEGS
 
