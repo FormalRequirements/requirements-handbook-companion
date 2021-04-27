@@ -114,10 +114,11 @@ Here is the list of the available templates (feel free to link:CONTRIBUTING.adoc
 
 WARNING: Work in progress
 
-. DOCX
-. Google Doc (see {cb-url}[this example] for now)
-. LaTeX (see https://github.com/jpeisenbarth/SRS-Tex[IEEE example])
+. https://github.com/FormalRequirements/requirements-handbook-companion/blob/main/templates/docx[DOCX]
+. https://docs.google.com/document/d/1hNATn8pcanNqjJmwZFfEgFheAOwlw2X9iqza31TEFts/edit?usp=sharing[Google Doc]
+. https://github.com/FormalRequirements/requirements-handbook-companion/blob/main/templates/latex[LaTeX]
 . link:githubImpl.adoc[GitHub] 
+. . https://github.com/FormalRequirements/requirements-handbook-companion/blob/main/templates/asciidoc[Asciidoc]
 . SysML
 
 .{check} Corresponding Requirement

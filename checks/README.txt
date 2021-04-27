@@ -19,8 +19,12 @@ FILE: README.adoc
 [✓] https://github.com/FormalRequirements/roboraceRequirements
 [✓] https://github.com/ddd-by-examples/library?ref=hackernoon.com#domain-description
 [✓] https://github.com/FormalRequirements/companionRequirements
-[✓] https://github.com/jpeisenbarth/SRS-Tex
+[✓] https://github.com/FormalRequirements/requirements-handbook-companion/blob/main/templates/docx
+[✓] https://docs.google.com/document/d/1hNATn8pcanNqjJmwZFfEgFheAOwlw2X9iqza31TEFts/edit?usp=sharing
+[✓] https://github.com/FormalRequirements/requirements-handbook-companion/blob/main/templates/latex
+[✖] https://github.com/FormalRequirements/requirements-handbook-companion/blob/main/templates/asciidoc
 [✓] https://raw.githubusercontent.com/FormalRequirements/requirements-handbook-companion/9f100f121c15772b07cc2bdc3d25afee587784fe/images/links.svg
 [✓] https://github.com/FormalRequirements/requirements-handbook-companion/blob/main/check-results.txt
 
-22 links checked.
+25 links checked.
+[✖] https://github.com/FormalRequirements/requirements-handbook-companion/blob/main/templates/asciidoc → Status: 404

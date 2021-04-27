@@ -5,8 +5,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.12">
-<link rel="icon" type="image/png" href="images/pegs.png">
-<title>Requirements Handbook Companion</title>
+<meta name="author" content="J.-M. Bruel,bruel@irit.fr">
+<title>Asciidoc Requirements Book Template</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /* Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
@@ -440,747 +440,158 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body class="article toc2 toc-left">
+<body class="book">
 <div id="header">
-<h1>Requirements Handbook Companion</h1>
-<div id="toc" class="toc2">
-<div id="toctitle">Table of Contents</div>
-<ul class="sectlevel1">
-<li><a href="#_disclaimer">1. Disclaimer</a></li>
-<li><a href="#_context">2. Context</a></li>
-<li><a href="#_overview_of_the_approach">3. Overview of the approach</a>
-<ul class="sectlevel2">
-<li><a href="#_basic_principles">3.1. Basic principles</a></li>
-<li><a href="#structure">3.2. Overall structure</a></li>
-<li><a href="#_links_between_the_four_pegs">3.3. Links between the four PEGS</a></li>
-<li><a href="#_the_lifecycle_model">3.4. The lifecycle model</a></li>
-</ul>
-</li>
-<li><a href="#_case_studies">4. Case studies</a></li>
-<li><a href="#templates">5. Book templates</a></li>
-<li><a href="#_verification_rules">6. Verification rules</a>
-<ul class="sectlevel2">
-<li><a href="#_books_mutual_references">6.1. Books mutual references</a></li>
-</ul>
-</li>
-<li><a href="#_references">References</a></li>
-<li><a href="#_appendices">Appendices</a>
-<ul class="sectlevel2">
-<li><a href="#_useful_links">Appendix A: Useful links</a></li>
-<li><a href="#_specific_implementations">Appendix B: Specific implementations</a></li>
-<li><a href="#_checks_results_and_issues">Appendix C: Checks results and issues</a></li>
-</ul>
-</li>
-</ul>
+<h1>Asciidoc Requirements Book Template</h1>
+<div class="details">
+<span id="author" class="author">J.-M. Bruel</span><br>
+<span id="email" class="email"><a href="mailto:bruel@irit.fr">bruel@irit.fr</a></span><br>
+<span id="revdate">1.2.1 -- 2021-04-27</span>
 </div>
 </div>
 <div id="content">
 <div id="preamble">
 <div class="sectionbody">
-<div class="paragraph">
-<p><span class="image"><a class="image" href="https://github.com/FormalRequirements/requirements-handbook-companion/actions"><img src="https://github.com/FormalRequirements/requirements-handbook-companion/workflows/Check%20URLs/badge.svg" alt="Check Markdown links"></a></span>
-<span class="image"><a class="image" href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a></span>
-<span class="image"><a class="image" href="https://gitpod.io/#https://github.com/FormalRequirements/requirements-handbook-companion"><img src="https://img.shields.io/badge/Gitpod-ready&#8212;&#8203;to&#8212;&#8203;code-blue?logo=gitpod" alt="Gitpod ready-to-code"></a></span>
-<span class="image"><a class="image" href="https://github.com/FormalRequirements/requirements-handbook-companion/blob/main/README.pdf"><img src="https://img.shields.io/badge/PDF-Download-blue" alt="PDF download"></a></span></p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_disclaimer">1. Disclaimer</h2>
-<div class="sectionbody">
-<div class="admonitionblock warning">
+<div class="admonitionblock note">
 <table>
 <tr>
 <td class="icon">
-<i class="fa icon-warning" title="Warning"></i>
+<i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-Work in progress!
+<div class="paragraph">
+<p>This document follows the requirements book structure presented in the <a href="http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf">Handbook of requirements and business analysis</a>.</p>
+</div>
 </td>
 </tr>
 </table>
 </div>
 <div class="paragraph">
-<p>Here is a list of warnings:</p>
+<p><strong>CHANGELOG</strong></p>
 </div>
-<div class="ulist">
-<ul>
-<li>
-<p>This work is in progress and subject to constant improvements, so pay attention to dates and versions.</p>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 60%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Version</th>
+<th class="tableblock halign-left valign-top">Date</th>
+<th class="tableblock halign-left valign-top">Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2021-02-01</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Initial draft by <a href="https://jmbruel.netlify.app">J.-M. Bruel</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>1.2.1</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>2021-04-27</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Current PDF version, by <a href="https://jmbruel.netlify.app">J.-M. Bruel</a></em></p></td>
+</tr>
+</tbody>
+</table>
+<div id="toc" class="toc">
+<div id="toctitle" class="title">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_goals">Goals</a>
+<ul class="sectlevel2">
+<li><a href="#_g_1_overall_context_and_goals">G.1 Overall context and goals</a></li>
+<li><a href="#_g_2_current_situation">G.2 Current situation</a></li>
+<li><a href="#_g_3_expected_benefits">G.3 Expected benefits</a></li>
+<li><a href="#_g_4_functionality_overview">G.4 Functionality overview</a></li>
+<li><a href="#_g_5_high_level_usage_scenarios">G.5 High-level usage scenarios</a></li>
+<li><a href="#_g_6_limitations_and_exclusions">G.6 Limitations and exclusions</a></li>
+<li><a href="#_g_7_stakeholders_and_requirements_sources">G.7 Stakeholders and requirements sources</a></li>
+</ul>
 </li>
-<li>
-<p>If you read the <code>PDF</code> version of this material on a browser, the links might not be clickable.
-Download it instead in your machine and open it with a PDF viewer.
-The links should be clickable there.</p>
+<li><a href="#_environment">Environment</a>
+<ul class="sectlevel2">
+<li><a href="#_e_1_glossary">E.1 Glossary</a></li>
+<li><a href="#_e_2_components">E.2 Components</a></li>
+<li><a href="#_e_3_constraints">E.3 Constraints</a></li>
+<li><a href="#_e_4_assumptions">E.4 Assumptions</a></li>
+<li><a href="#_e_5_effects">E.5 Effects</a></li>
+<li><a href="#_e_6_invariants">E.6 Invariants</a></li>
+</ul>
+</li>
+<li><a href="#_project">Project</a>
+<ul class="sectlevel2">
+<li><a href="#_p_1_roles">P.1 Roles</a></li>
+<li><a href="#_p_2_personnel_characteristics_and_constraints">P.2 Personnel characteristics and constraints</a></li>
+<li><a href="#_p_3_imposed_technical_choices">P.3 Imposed technical choices</a></li>
+<li><a href="#_p_4_schedule_and_milestones">P.4 Schedule and milestones</a></li>
+<li><a href="#_p_5_tasks_and_deliverables">P.5 Tasks and deliverables</a></li>
+<li><a href="#_p_6_risk_and_mitigation_analysis">P.6 Risk and mitigation analysis</a></li>
+<li><a href="#_p_7_requirements_process_and_report">P.7 Requirements process and report</a></li>
+</ul>
+</li>
+<li><a href="#_system">System</a>
+<ul class="sectlevel2">
+<li><a href="#_s_1_components">S.1 Components</a></li>
+<li><a href="#_s_2_functionality">S.2 Functionality</a></li>
+<li><a href="#_s_3_interfaces">S.3 Interfaces</a></li>
+<li><a href="#_s_4_scenarios_use_cases_user_stories">S.4 Scenarios (use cases, user stories)</a></li>
+<li><a href="#_s_5_prioritization">S.5 Prioritization</a></li>
+<li><a href="#_s_6_verification_and_acceptance_criteria">S.6 Verification and acceptance criteria</a></li>
+</ul>
 </li>
 </ul>
 </div>
-<div class="paragraph">
-<p>Conventions for this book:</p>
-</div>
-<table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 1. Icons signification</caption>
-<colgroup>
-<col style="width: 12.5%;">
-<col style="width: 87.5%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Icon</th>
-<th class="tableblock halign-left valign-top">Signification</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="icon"><i class="fa fa-check-circle"></i></span></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">A precisely referenced requirement this section is satisfying</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="icon"><i class="fa fa-bug"></i></span></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">A precisely referenced requirement this section is related to</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="icon"><i class="fa fa-times-circle"></i></span></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">No corresponding requirement for this section (should be fixed)</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_context">2. Context</h2>
+<h2 id="_goals">Goals</h2>
 <div class="sectionbody">
-<div class="paragraph">
-<p>This repository constitutes the companion of the book: <a href="http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf">Handbook of requirements and business analysis</a>.
-It serves as the basis for the future Handbook&#8217;s site: <a href="http://requirements-handbook.org/" class="bare">http://requirements-handbook.org/</a></p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_overview_of_the_approach">3. Overview of the approach</h2>
-<div class="sectionbody">
-<div class="admonitionblock warning">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-warning" title="Warning"></i>
-</td>
-<td class="content">
-Work in progress!
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p>This chapter is an overview of <b>PEGS</b>.
-It aims at making this companion book self-content.
-We highly recommend, for more details and a full description of the subtleties of <b>PEGS</b>, to read the corresponding <a href="http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf">Handbook</a>.
-Besides, this chapter does not cover the following aspects of <b>PEGS</b> that the <a href="http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf">Handbook</a> fully addresses:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>General principles of requirements (see <a href="http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf">Handbook</a>, chapter 2)</p>
-</li>
-<li>
-<p>Quality criteria for requirements (see <a href="http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf">Handbook</a>, chapter 4)</p>
-</li>
-<li>
-<p>How to write requirements (see <a href="http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf">Handbook</a>, chapter 6)</p>
-</li>
-<li>
-<p>Completeness (see <a href="http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf">Handbook</a>, chapter 11)</p>
-</li>
-<li>
-<p>Verification (see <a href="http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf">Handbook</a>, chapter 12)</p>
-</li>
-</ul>
-</div>
 <div class="sect2">
-<h3 id="_basic_principles">3.1. Basic principles</h3>
-<div class="sect3">
-<h4 id="_universe_of_discourse">3.1.1. Universe of discourse</h4>
-<div id="logo" class="imageblock">
-<div class="content">
-<img src="images/pegs.png" alt="pegs">
-</div>
-<div class="title">Figure 1. The <b>PEGS</b> logo</div>
-</div>
-<div class="paragraph">
-<p><b>PEGS</b> takes its name as a reminder of the four dimensions of requirements, leading to the organization of requirements in four books (<a href="#structure">Section 3.2</a> will detail this books' structure):</p>
-</div>
-<div class="dlist">
-<dl>
-<dt class="hdlist1">Goals</dt>
-<dd>
-<p>the needs of the target organization, which the <strong>system</strong> will address.</p>
-</dd>
-<dt class="hdlist1">System</dt>
-<dd>
-<p>a set of related artifacts, devised to help meet certain <strong>goals</strong>.</p>
-</dd>
-<dt class="hdlist1">Project</dt>
-<dd>
-<p>the set of human processes involved in the planning, construction, revision and operation of the <strong>system</strong>.</p>
-</dd>
-<dt class="hdlist1">Environment</dt>
-<dd>
-<p>the set of entities external to the <strong>project</strong> and <strong>system</strong> but with the potential to affect the <strong>goals</strong>, <strong>project</strong> or <strong>system</strong> or be affected by them.</p>
-</dd>
-</dl>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-All this document will follow, as much as possible, the color convention illustrated by the logo (see <a href="#logo">Figure 1</a>).
-</td>
-</tr>
-</table>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_kind_of_requirements">3.1.2. Kind of requirements</h4>
-<div class="paragraph">
-<p>A requirement is a relevant statement about a project, environment, goal, or system.
-The <a href="http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf">Handbook</a> defines important notions such as property, statements, relevance, or stakeholders.</p>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-Some kinds have special cases (e.g., <em>Role</em> being a special case of <em>Responsibility</em>). In this book, we only consider main topics for simplicity. Refer to section 1.3 of the <a href="http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf">Handbook</a> for more details.
-</td>
-</tr>
-</table>
-</div>
-<div class="sect4">
-<h5 id="_requirements_applying_to_all_dimensions">Requirements applying to all dimensions</h5>
-<div class="paragraph">
-<p>To describe the kinds of requirements, let us start with the one that may arise in all four PEGS dimensions: component, responsibility, limit and role.</p>
-</div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 14.2857%;">
-<col style="width: 28.5714%;">
-<col style="width: 57.1429%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Icon</th>
-<th class="tableblock halign-left valign-top">Kind</th>
-<th class="tableblock halign-left valign-top">Quick description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">💻</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Component</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Identification of a part</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">👑</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Responsibility</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Assignment of behavior or task to component</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">✂️</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Limit</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Exclusion from scope of requirements</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="sect4">
-<h5 id="_requirements_affecting_goals">Requirements affecting goals</h5>
-<div class="admonitionblock warning">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-warning" title="Warning"></i>
-</td>
-<td class="content">
-Rationale is not in the <a href="http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf">Handbook</a> &#8658; Question to Bertrand
-</td>
-</tr>
-</table>
-</div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 14.2857%;">
-<col style="width: 28.5714%;">
-<col style="width: 57.1429%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Icon</th>
-<th class="tableblock halign-left valign-top">Kind</th>
-<th class="tableblock halign-left valign-top">Quick description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">{goal}</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Goal</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Desired result for the target organization</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">{obstacle}</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Obstacle</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Goal describing a property to be overcome</p></td>
-</tr>
-</tbody>
-</table>
-<div class="admonitionblock tip">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
-</td>
-<td class="content">
-If you are surprised to see <em>Obstacle</em> but not <em>Rationale</em>, which often go together in other approaches (e.g. in SysML), this is because in the <a href="http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf">Handbook</a>' classification, there is a special case of <em>Meta-requirement</em>, called <em>Justification</em> that plays this role.
-</td>
-</tr>
-</table>
-</div>
-</div>
-<div class="sect4">
-<h5 id="_requirements_on_the_project">Requirements on the project</h5>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 14.2857%;">
-<col style="width: 28.5714%;">
-<col style="width: 57.1429%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Icon</th>
-<th class="tableblock halign-left valign-top">Kind</th>
-<th class="tableblock halign-left valign-top">Quick description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">{task}</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Task</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Activity included in project</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">{product}</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Product</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Artifact needed or produced by a task</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="sect4">
-<h5 id="_requirements_on_the_system">Requirements on the system</h5>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 14.2857%;">
-<col style="width: 28.5714%;">
-<col style="width: 57.1429%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Icon</th>
-<th class="tableblock halign-left valign-top">Kind</th>
-<th class="tableblock halign-left valign-top">Quick description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">{behavior}</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Behavior</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Property of the operation of the system</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="sect4">
-<h5 id="_requirements_about_the_environment">Requirements about the environment</h5>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 14.2857%;">
-<col style="width: 28.5714%;">
-<col style="width: 57.1429%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Icon</th>
-<th class="tableblock halign-left valign-top">Kind</th>
-<th class="tableblock halign-left valign-top">Quick description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">{constraint}</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Constraint</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Property imposed by environment</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">{assumption}</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Assumption</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Posited property of environment</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">{effect}</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Effect</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Property of the environment affected by the system</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">{invariant}</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Invariant</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Environment property that must be maintained</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="sect4">
-<h5 id="_document_description">Document description</h5>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 14.2857%;">
-<col style="width: 28.5714%;">
-<col style="width: 57.1429%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Icon</th>
-<th class="tableblock halign-left valign-top">Kind</th>
-<th class="tableblock halign-left valign-top">Quick description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">{lack}</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Lack</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Property that is not in requirements but should be</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">{noise}</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Noise</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Property that is in requirements but should not be</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">{meta}</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Meta-requirement</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Property of requirements themselves (not of
-project, environment, goals or system)</p></td>
-</tr>
-</tbody>
-</table>
-</div>
+<h3 id="_g_1_overall_context_and_goals">G.1 Overall context and goals</h3>
+<div id="g1-mainGoal" class="paragraph">
+<p><code>1</code>
+Exemple of numbered requirement.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="structure">3.2. Overall structure</h3>
-<div class="imageblock">
-<div class="content">
-<img src="images/classification.svg" alt="classification">
-</div>
-<div class="title">Figure 2. The four books of requirements</div>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-This structure can influence the organization of a document in books. It can also be lead to requirements packages (e.g., in <a href="#templates">SysML</a>) or folders (e.g., in a spreadsheet).
-</td>
-</tr>
-</table>
-</div>
-<div class="sect3">
-<h4 id="_the_four_pegs">3.2.1. The four pegs</h4>
-<div class="admonitionblock tip">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
-</td>
-<td class="content">
-Front and back matters&#8230;&#8203;
-</td>
-</tr>
-</table>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_goals">3.2.2. Goals</h4>
-<div class="sect4">
-<h5 id="_g_1_overall_context_and_goals">G.1 Overall context and goals</h5>
-
-</div>
-<div class="sect4">
-<h5 id="_g_2_current_situation">G.2 Current situation</h5>
-
-</div>
-<div class="sect4">
-<h5 id="_g_3_expected_benefits">G.3 Expected benefits</h5>
-
-</div>
-<div class="sect4">
-<h5 id="_g_4_functionality_overview">G.4 Functionality overview</h5>
-
-</div>
-<div class="sect4">
-<h5 id="_g_5_high_level_usage_scenarios">G.5 High-level usage scenarios</h5>
-
-</div>
-<div class="sect4">
-<h5 id="_g_6_limitations_and_exclusions">G.6 Limitations and exclusions</h5>
-
-</div>
-<div class="sect4">
-<h5 id="_g_7_stakeholders_and_requirements_sources">G.7 Stakeholders and requirements sources</h5>
-
-</div>
-</div>
-<div class="sect3">
-<h4 id="_environment">3.2.3. Environment</h4>
-
-</div>
-<div class="sect3">
-<h4 id="_project">3.2.4. Project</h4>
-
-</div>
-<div class="sect3">
-<h4 id="_system">3.2.5. System</h4>
-
-</div>
-</div>
-<div class="sect2">
-<h3 id="_links_between_the_four_pegs">3.3. Links between the four PEGS</h3>
-<div class="imageblock">
-<div class="content">
-<img src="images/links.svg" alt="links">
-</div>
-<div class="title">Figure 3. Reference links</div>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="images/verification.svg" alt="verification">
-</div>
-<div class="title">Figure 4. Verification obligations</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_the_lifecycle_model">3.4. The lifecycle model</h3>
-<div class="imageblock">
-<div class="content">
-<img src="images/lifecycle.svg" alt="lifecycle">
-</div>
-<div class="title">Figure 5. The lifecycle model</div>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_case_studies">4. Case studies</h2>
-<div class="sectionbody">
+<h3 id="_g_2_current_situation">G.2 Current situation</h3>
 <div class="paragraph">
-<p>We illustrate the use of <b>PEGS</b> through the following case studies:</p>
-</div>
-<div class="admonitionblock warning">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-warning" title="Warning"></i>
-</td>
-<td class="content">
-Work in progress
-</td>
-</tr>
-</table>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>The Roborace (see the dedicated repo <a href="https://github.com/FormalRequirements/roboraceRequirements">here</a>)</p>
-</li>
-<li>
-<p>A more information-system-oriented example (one option is this <a href="https://github.com/ddd-by-examples/library?ref=hackernoon.com#domain-description">library</a> example)</p>
-</li>
-<li>
-<p>This Companion Book' requirements (see the dedicated repo <a href="https://github.com/FormalRequirements/companionRequirements">here</a>)</p>
-</li>
-</ol>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="templates">5. Book templates</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>We provide a set of Book templates in this companion website to help you apply <b>PEGS</b> and organize your requirements.
-Here is the list of the available templates (feel free to <a href="CONTRIBUTING.adoc">contribute</a> by submitting additional templates):</p>
-</div>
-<div class="admonitionblock warning">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-warning" title="Warning"></i>
-</td>
-<td class="content">
-Work in progress
-</td>
-</tr>
-</table>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p><a href="https://github.com/FormalRequirements/requirements-handbook-companion/blob/main/templates/docx/pegs-template.docx">DOCX</a></p>
-</li>
-<li>
-<p><a href="https://docs.google.com/document/d/1hNATn8pcanNqjJmwZFfEgFheAOwlw2X9iqza31TEFts/edit?usp=sharing">Google Doc</a></p>
-</li>
-<li>
-<p><a href="https://github.com/FormalRequirements/requirements-handbook-companion/blob/main/templates/latex/pegs.tex">LaTeX</a></p>
-</li>
-<li>
-<p><a href="githubImpl.adoc">GitHub</a></p>
-</li>
-<li>
-<p>SysML</p>
-</li>
-</ol>
+<p>Example of To Be Done action:</p>
 </div>
 <details>
-<summary class="title"><span class="icon"><i class="fa fa-check-circle"></i></span> Corresponding Requirement</summary>
+<summary class="title">TBD</summary>
 <div class="content">
-<div class="paragraph">
-<p>This section satisfies <a href="https://formalrequirements.github.io/companionRequirements/#g31">this requirement</a>.</p>
-</div>
-</div>
-</details>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_verification_rules">6. Verification rules</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>This section provides some implementation examples of the verification rules described in the <a href="http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf">Handbook</a>.</p>
-</div>
-<div class="sect2">
-<h3 id="_books_mutual_references">6.1. Books mutual references</h3>
-<div class="paragraph">
-<p>One of the requirements for this book, taken from the <a href="http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf">Handbook</a>, says (see <a href="https://formalrequirements.github.io/companionRequirements#s6-mutualRefs">here</a>):</p>
-</div>
-<div class="quoteblock">
-<blockquote>
-The books may reference each other, but not arbitrarily.
-</blockquote>
-</div>
-<div class="paragraph">
-<p>The <a href="#mutualRefs">Figure 6</a> shows which books may refer to which.</p>
-</div>
-<div id="mutualRefs" class="imageblock">
-<div class="content">
-<img src="https://raw.githubusercontent.com/FormalRequirements/requirements-handbook-companion/9f100f121c15772b07cc2bdc3d25afee587784fe/images/links.svg" alt="Reference links" width="40%">
-</div>
-<div class="title">Figure 6. Possible references between the books</div>
-</div>
-<div class="paragraph">
-<p>From this mutual references rule, a concrete implementation, written in Gherkin, enforces its application:</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="images/book-feature.png" alt="Book feature">
-</div>
-<div class="title">Figure 7. Verification rule as a BDD feature (see <a href="https://github.com/formalrequirements/companionRequirements/blob/main/features/book.feature">this file</a>)</div>
-</div>
-<div class="paragraph">
-<p>Here is the execution, using <code>cucumber</code>, of the corresponding tests, showing that they all pass (green lines):</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="images/cucumber.png" alt="Cucumber execution">
-</div>
-<div class="title">Figure 8. tests execution</div>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_references">References</h2>
-<div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p>Sommerville &amp; Sawyer</p>
-</li>
-<li>
-<p>Axel van Lamsweerde</p>
-</li>
-<li>
-<p>Klaus Pohl</p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_appendices">Appendices</h2>
-<div class="sectionbody">
-<div class="sect2">
-<h3 id="_useful_links">Appendix A: Useful links</h3>
-<div class="ulist">
-<ul>
-<li>
-<p>The draft of the Method Book: <a href="http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf">PDF</a></p>
-</li>
-<li>
-<p>The draft of the Companion Book: <a href="https://docs.google.com/document/d/1HrWCRzyW_iTf1QXFFzEoDvvc66IzMCDb3uXGS5GRWz8/edit?usp=sharing">Google Doc</a></p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_specific_implementations">Appendix B: Specific implementations</h3>
-<div class="paragraph">
-<p>Here is a list of potential mappings between the <b>PEGS</b>:</p>
-</div>
 <div class="dlist">
 <dl>
-<dt class="hdlist1">SysML</dt>
+<dt class="hdlist1">Author</dt>
 <dd>
-<div class="ulist">
-<ul>
-<li>
-<p>Each PEGS could be a package</p>
-</li>
-<li>
-<p>Requirements could be stereotyped (e.g., <code><a href="#_goals">Section 3.2.2</a></code> or <code><a href="#_system">Section 3.2.5</a></code>)</p>
-</li>
-</ul>
-</div>
+<p><a href="https://jmbruel.netlify.app">J.-M. Bruel</a></p>
 </dd>
-<dt class="hdlist1">FORM-L</dt>
+<dt class="hdlist1">Date</dt>
 <dd>
-<div class="ulist">
-<ul>
-<li>
-<p>M. Thuy could be interested in providing a template for the <b>PEGS</b> in Form-L</p>
-</li>
-</ul>
-</div>
+<p>2021-02-21</p>
 </dd>
-<dt class="hdlist1">RSML</dt>
+<dt class="hdlist1">Deadline</dt>
 <dd>
-<div class="ulist">
-<ul>
+<p>June</p>
+</dd>
+<dt class="hdlist1">Importance</dt>
+<dd>
+<p>serious</p>
+</dd>
+<dt class="hdlist1">Needs</dt>
+<dd>
+<div class="ulist checklist">
+<ul class="checklist">
 <li>
-<p>Florian could integrate the <b>PEGS</b> in the editor</p>
+<p><i class="fa fa-square-o"></i> stakeholders to ask</p>
+</li>
+<li>
+<p><i class="fa fa-square-o"></i> documentation to consider</p>
+</li>
+<li>
+<p><i class="fa fa-check-square-o"></i> management decision (by <a href="https://jmbruel.netlify.app">J.-M. Bruel</a>)</p>
 </li>
 </ul>
 </div>
@@ -1188,64 +599,184 @@ The books may reference each other, but not arbitrarily.
 </dl>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_checks_results_and_issues">Appendix C: Checks results and issues</h3>
-<div class="sect3">
-<h4 id="_urls">URLs</h4>
-<details>
-<summary class="title">Checking URLs result (last update: 2021-04-26):</summary>
-<div class="content">
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-shell" data-lang="shell">Lun 26 avr 2021 17:37:23 CEST
-
-FILE: README.adoc
-[✓] http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf
-[/] http://requirements-handbook.org/
-[✓] https://docs.google.com/document/d/1HrWCRzyW_iTf1QXFFzEoDvvc66IzMCDb3uXGS5GRWz8/edit?usp=sharing
-[✓] https://github.com/FormalRequirements/requirements-handbook-companion
-[✓] https://formalrequirements.github.io/requirements-handbook-companion
-[✓] https://formalrequirements.github.io/companionRequirements
-[✓] https://github.com/formalrequirements/companionRequirements
-[✓] https://gist.github.com/rxaviers/7360908
-[✓] https://github.com/FormalRequirements/requirements-handbook-companion/workflows/Check%20URLs/badge.svg
-[✓] https://github.com/FormalRequirements/requirements-handbook-companion/actions
-[✓] https://img.shields.io/badge/License-MIT-yellow.svg
-[✓] https://opensource.org/licenses/MIT
-[✓] https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod
-[✓] https://gitpod.io/#https://github.com/FormalRequirements/requirements-handbook-companion
-[✓] https://img.shields.io/badge/PDF-Download-blue
-[✓] https://github.com/FormalRequirements/requirements-handbook-companion/blob/main/README.pdf
-[✓] https://github.com/FormalRequirements/roboraceRequirements
-[✓] https://github.com/ddd-by-examples/library?ref=hackernoon.com#domain-description
-[✓] https://github.com/FormalRequirements/companionRequirements
-[✓] https://github.com/FormalRequirements/requirements-handbook-companion/blob/main/templates/docx/pegs-template.docx
-[✓] https://docs.google.com/document/d/1hNATn8pcanNqjJmwZFfEgFheAOwlw2X9iqza31TEFts/edit?usp=sharing
-[✓] https://github.com/FormalRequirements/requirements-handbook-companion/blob/main/templates/latex/pegs.tex
-[✓] https://raw.githubusercontent.com/FormalRequirements/requirements-handbook-companion/9f100f121c15772b07cc2bdc3d25afee587784fe/images/links.svg
-[✓] https://github.com/FormalRequirements/requirements-handbook-companion/blob/main/check-results.txt
-
-24 links checked.
-
-FILE: githubImpl.adoc
-[✓] http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf
-[/] http://requirements-handbook.org/
-[✓] https://docs.google.com/document/d/1HrWCRzyW_iTf1QXFFzEoDvvc66IzMCDb3uXGS5GRWz8/edit?usp=sharing
-[✓] https://github.com
-
-4 links checked.
-
-FILE: overview.adoc
-[✓] https://gist.github.com/rxaviers/7360908
-[✓] http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf
-[/] http://requirements-handbook.org/
-[✓] https://docs.google.com/document/d/1HrWCRzyW_iTf1QXFFzEoDvvc66IzMCDb3uXGS5GRWz8/edit?usp=sharing
-
-4 links checked.</code></pre>
-</div>
-</div>
-</div>
 </details>
+</div>
+<div class="sect2">
+<h3 id="_g_3_expected_benefits">G.3 Expected benefits</h3>
+<div class="paragraph">
+<p><span class="icon"><i class="fa fa-warning"></i></span> Nothing available at this point.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_g_4_functionality_overview">G.4 Functionality overview</h3>
+<div class="paragraph">
+<p><span class="icon"><i class="fa fa-warning"></i></span> Nothing available at this point.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_g_5_high_level_usage_scenarios">G.5 High-level usage scenarios</h3>
+<div class="paragraph">
+<p><span class="icon"><i class="fa fa-warning"></i></span> Nothing available at this point.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_g_6_limitations_and_exclusions">G.6 Limitations and exclusions</h3>
+<div class="paragraph">
+<p><span class="icon"><i class="fa fa-warning"></i></span> Nothing available at this point.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_g_7_stakeholders_and_requirements_sources">G.7 Stakeholders and requirements sources</h3>
+<div class="paragraph">
+<p><span class="icon"><i class="fa fa-warning"></i></span> Nothing available at this point.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_environment">Environment</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_e_1_glossary">E.1 Glossary</h3>
+<div class="paragraph">
+<p>Example of terms definition.</p>
+</div>
+<div class="sect3">
+<h4 id="e1-terms"><code>1</code> Terms</h4>
+<div id="companion" class="dlist">
+<dl>
+<dt class="hdlist1"><a href="#companion">Companion Book</a></dt>
+<dd>
+<p>The <em>system</em> to be developed: the companion book of <a href="#Handbook">[Handbook]</a>. Current version available <a href="https://formalrequirements.github.io/requirements-handbook-companion">here</a>.</p>
+</dd>
+</dl>
+</div>
+<div id="Handbook" class="dlist">
+<dl>
+<dt class="hdlist1"><a href="#Handbook">Handbook</a></dt>
+<dd>
+<p>The book, entitled "Handbook of requirements and business analysis", written by Bertrand Meyer (see PDF <a href="http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf">here</a>), and for which the <a href="#companion">[companion]</a> serves as complementary material.</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_e_2_components">E.2 Components</h3>
+<div class="paragraph">
+<p><span class="icon"><i class="fa fa-warning"></i></span> Nothing available at this point.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_e_3_constraints">E.3 Constraints</h3>
+<div class="paragraph">
+<p><span class="icon"><i class="fa fa-warning"></i></span> Nothing available at this point.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_e_4_assumptions">E.4 Assumptions</h3>
+<div class="paragraph">
+<p><span class="icon"><i class="fa fa-warning"></i></span> Nothing available at this point.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_e_5_effects">E.5 Effects</h3>
+<div class="paragraph">
+<p><span class="icon"><i class="fa fa-warning"></i></span> Nothing available at this point.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_e_6_invariants">E.6 Invariants</h3>
+<div class="paragraph">
+<p><span class="icon"><i class="fa fa-warning"></i></span> Nothing available at this point.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_project">Project</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_p_1_roles">P.1 Roles</h3>
+<div class="paragraph">
+<p><span class="icon"><i class="fa fa-warning"></i></span> Nothing available at this point.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_p_2_personnel_characteristics_and_constraints">P.2 Personnel characteristics and constraints</h3>
+<div class="paragraph">
+<p><span class="icon"><i class="fa fa-warning"></i></span> Nothing available at this point.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_p_3_imposed_technical_choices">P.3 Imposed technical choices</h3>
+<div class="paragraph">
+<p><span class="icon"><i class="fa fa-warning"></i></span> Nothing available at this point.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_p_4_schedule_and_milestones">P.4 Schedule and milestones</h3>
+<div class="paragraph">
+<p><span class="icon"><i class="fa fa-warning"></i></span> Nothing available at this point.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_p_5_tasks_and_deliverables">P.5 Tasks and deliverables</h3>
+<div class="paragraph">
+<p><span class="icon"><i class="fa fa-warning"></i></span> Nothing available at this point.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_p_6_risk_and_mitigation_analysis">P.6 Risk and mitigation analysis</h3>
+<div class="paragraph">
+<p><span class="icon"><i class="fa fa-warning"></i></span> Nothing available at this point.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_p_7_requirements_process_and_report">P.7 Requirements process and report</h3>
+<div class="paragraph">
+<p><span class="icon"><i class="fa fa-warning"></i></span> Nothing available at this point.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_system">System</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_s_1_components">S.1 Components</h3>
+<div class="paragraph">
+<p><span class="icon"><i class="fa fa-warning"></i></span> Nothing available at this point.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_s_2_functionality">S.2 Functionality</h3>
+<div class="paragraph">
+<p><span class="icon"><i class="fa fa-warning"></i></span> Nothing available at this point.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_s_3_interfaces">S.3 Interfaces</h3>
+<div class="paragraph">
+<p><span class="icon"><i class="fa fa-warning"></i></span> Nothing available at this point.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_s_4_scenarios_use_cases_user_stories">S.4 Scenarios (use cases, user stories)</h3>
+<div class="paragraph">
+<p><span class="icon"><i class="fa fa-warning"></i></span> Nothing available at this point.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_s_5_prioritization">S.5 Prioritization</h3>
+<div class="paragraph">
+<p><span class="icon"><i class="fa fa-warning"></i></span> Nothing available at this point.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_s_6_verification_and_acceptance_criteria">S.6 Verification and acceptance criteria</h3>
+<div class="paragraph">
+<p><span class="icon"><i class="fa fa-warning"></i></span> Nothing available at this point.</p>
 </div>
 </div>
 </div>
@@ -1253,7 +784,7 @@ FILE: overview.adoc
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2021-04-26 17:36:57 +0200
+Last updated 2021-04-27 10:54:03 +0200
 </div>
 </div>
 </body>

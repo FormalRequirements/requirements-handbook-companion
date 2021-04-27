@@ -1,0 +1,249 @@
+:title: Asciidoc Requirements Book Template
+:project: Project
+:version: 1.2.1
+:author: J.-M. Bruel
+:email: bruel@irit.fr
+:organization: IRIT/CNRS - University of Toulouse, France
+:icons: font
+:toc: macro
+//--------------------------- PDF version
+:doctype: book
+//:title-page-background-image: image::pegs.svg[pdfwidth=60%]
+// :title-logo-image: image::pegs.svg[top=1%, align=left, pdfwidth=2.5in]
+//:back-cover-image: image::pegs.svg[pdfwidth=160%]
+:method: pass:[<b>PEGS</b>]
+ifdef::pdf-backend[]
+:method: PEGS
+endif::[]
+
+= {title}
+{author},{email}
+{version} -- {localdate}
+
+//--------------------------- Glossary & Definitions
+// URLS
+:companionURL: https://formalrequirements.github.io/requirements-handbook-companion
+:HandbookPDF: http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf
+:companionGit: https://github.com/FormalRequirements/requirements-handbook
+:emptysec: icon:warning[] Nothing available at this point.
+
+// ICONS
+:check: icon:check-circle[]
+:bug: icon:bug[]
+:missing: icon:times-circle[]
+// GLOSSARY ENTRIES
+:companion: <<companion, Companion Book>>
+:Handbook:  <<Handbook, Handbook>>
+// PERSONS ENTRIES
+:jmb: https://jmbruel.netlify.app[J.-M. Bruel]
+
+
+[NOTE]
+====
+This document follows the requirements book structure presented in the {HandbookPDF}[Handbook of requirements and business analysis].
+====
+
+*CHANGELOG*
+
+//----------------------------------------------
+[cols="1,1,3",,options="header"]
+|===
+| Version | Date | Comment 
+//----------------------------------------------
+| 1.0   | 2021-02-01 | Initial draft by {jmb}
+| _{version}_ | _{localdate}_ | _Current PDF version, by {jmb}_
+|=== 
+//----------------------------------------------
+
+toc::[] 
+
+//------------------------------------
+// GOALS book
+//
+// Template for requirement:
+//---- Requirement
+//[[gx-keyword]] 
+//`{counter:gx}`
+// Requirement
+
+// {missing} [Corresponding Artifact]
+//---- 
+//------------------------------------
+
+== Goals
+
+=== G.1 Overall context and goals
+
+//---- Requirement
+[[g1-mainGoal]]
+`{counter:g1}`
+Exemple of numbered requirement.
+//---- 
+
+=== G.2 Current situation
+
+Example of To Be Done action:
+
+//---- TBD: To Be Determined
+.TBD
+[%collapsible]
+====
+Author:: {jmb}
+Date:: 2021-02-21 
+Deadline:: June
+Importance:: serious
+//show-stopper / serious / desirable
+Needs:: 
+- [ ] stakeholders to ask
+- [ ] documentation to consider
+- [x] management decision (by {jmb})
+====
+
+//---- Requirement
+//[[g2-current]]
+// `{counter:g2}`
+// The only available material is the current status of the {Handbook}.
+
+=== G.3 Expected benefits 
+
+{emptysec}
+
+=== G.4 Functionality overview
+
+{emptysec}
+
+=== G.5 High-level usage scenarios 
+
+{emptysec}
+
+=== G.6 Limitations and exclusions 
+
+{emptysec}
+
+=== G.7 Stakeholders and requirements sources
+
+{emptysec}
+
+//------------------------------------
+// ENVIRONMENT book
+//
+// Template for requirement:
+//[[ex-keyword]] 
+//`{counter:environment}`
+// Requirement
+
+// {missing} [Corresponding Artifact]
+//------------------------------------
+== Environment
+
+=== E.1 Glossary
+
+Example of terms definition.
+
+[[e1-terms]]
+==== `{counter:e1}` Terms
+
+[[companion]]
+{companion}:: The _system_ to be developed: the companion book of <<Handbook>>. Current version available {companionURL}[here].
+
+[[Handbook]]
+{Handbook}:: The book, entitled "Handbook of requirements and business analysis", written by Bertrand Meyer (see PDF {HandbookPDF}[here]), and for which the <<companion>> serves as complementary material.
+
+=== E.2 Components
+
+{emptysec}
+
+=== E.3 Constraints
+
+{emptysec}
+
+=== E.4 Assumptions
+
+{emptysec}
+
+=== E.5 Effects
+
+{emptysec}
+
+=== E.6 Invariants
+
+{emptysec}
+
+//------------------------------------
+// PROJECT book
+//
+// Template for requirement:
+//[[ex-keyword]] 
+//`{counter:project}`
+// Requirement
+
+// {missing} [Corresponding Artifact]
+//------------------------------------
+== Project
+
+=== P.1 Roles
+
+{emptysec}
+
+=== P.2 Personnel characteristics and constraints
+
+{emptysec}
+
+=== P.3 Imposed technical choices
+
+{emptysec}
+
+=== P.4 Schedule and milestones
+
+{emptysec}
+
+=== P.5 Tasks and deliverables
+
+{emptysec}
+
+=== P.6 Risk and mitigation analysis
+
+{emptysec}
+
+=== P.7 Requirements process and report
+
+{emptysec}
+
+//------------------------------------
+// SYSTEM book
+//
+// Template for requirement:
+//---- Requirement
+//[[sx-keyword]] 
+//`{counter:sx}`
+// Requirement
+
+// {missing} [Corresponding Artifact]
+//---- 
+//------------------------------------
+
+== System
+
+=== S.1 Components
+
+{emptysec}
+
+=== S.2 Functionality
+
+{emptysec}
+
+=== S.3 Interfaces
+
+{emptysec}
+
+=== S.4 Scenarios (use cases, user stories)
+
+{emptysec}
+
+=== S.5 Prioritization
+
+{emptysec}
+
+=== S.6 Verification and acceptance criteria
+
+{emptysec}
