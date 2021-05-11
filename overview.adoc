@@ -34,13 +34,32 @@ endif::[]
 :cb-url: https://docs.google.com/document/d/1HrWCRzyW_iTf1QXFFzEoDvvc66IzMCDb3uXGS5GRWz8/edit?usp=sharing
 
 
+// ICONS
+:component: 💻
+:responsibility: 👑
+:limit: ✂️ 
+:role: 👷
+:goal: 🎯
+:obstacle: 🚧 
+:task: 📋
+:product: 🔎
+:behavior: 🚥
+:constraint: 🛃
+:assumption: 💬
+:attribute: #️⃣
+:effect: 🔀
+:invariant: ♻️
+:lack: ❓
+:noise: 🎧
+:meta: 📁
+// icons for GitHub https://gist.github.com/rxaviers/7360908
 
 
 WARNING: Work in progress!
 
 This chapter is an overview of {method}.
 It aims at making this companion book self-content.
-We highly recommend, for more details and a full description of the subtleties of {method}, to read the corresponding {Handbook}.
+For more details and a complete description of the subtleties of {method}, we highly recommend reading the corresponding {Handbook}.
 Besides, this chapter does not cover the following aspects of {method} that the {Handbook} fully addresses:
 
 - General principles of requirements (see {Handbook}, chapter 2)
@@ -53,7 +72,7 @@ Besides, this chapter does not cover the following aspects of {method} that the 
 
 === Universe of discourse
 
-[[logo]]
+[#logo]
 .The {method} logo
 image::pegs.png[]
 
@@ -63,7 +82,7 @@ Goals:: the needs of the target organization, which the *system* will address.
 
 System:: a set of related artifacts, devised to help meet certain *goals*.
 
-Project:: the set of human processes involved in the planning, construction, revision and operation of the *system*.
+Project:: the set of human processes involved in the planning, construction, revision, and operation of the *system*.
 
 Environment:: the set of entities external to the *project* and *system* but with the potential to affect the *goals*, *project* or *system* or be affected by them.
 
@@ -77,12 +96,9 @@ The {Handbook} defines important notions such as property, statements, relevance
 NOTE: Some kinds have special cases (e.g., _Role_ being a special case of _Responsibility_). In this book, we only consider main topics for simplicity. Refer to section 1.3 of the {Handbook} for more details.
 
 ==== Requirements applying to all dimensions
-To describe the kinds of requirements, let us start with the one that may arise in all four PEGS dimensions: component, responsibility, limit and role.
 
-:component: 💻
-:responsibility: 👑
-:limit: ✂️ 
-:role: 👷
+To describe the kinds of requirements, let us start with the one that may arise in all four PEGS dimensions: component, responsibility, limit, and role.
+
 //----------------------------------------------
 [cols="1,2,4",options="header"]
 |===
@@ -97,6 +113,7 @@ To describe the kinds of requirements, let us start with the one that may arise 
 ==== Requirements affecting goals
 
 WARNING: Rationale is not in the {handbook} => Question to Bertrand
+
 //----------------------------------------------
 [cols="1,2,4",options="header"]
 |===
@@ -107,7 +124,7 @@ WARNING: Rationale is not in the {handbook} => Question to Bertrand
 |=== 
 //----------------------------------------------
 
-TIP: If you are surprised to see _Obstacle_ but not _Rationale_, which often go together in other approaches (e.g. in SysML), this is because in the {Handbook}' classification, there is a special case of _Meta-requirement_, called _Justification_ that plays this role.
+TIP: If you are surprised to see _Obstacle_ but not _Rationale_, which often go together in other approaches (e.g., in SysML), this is because, in the {Handbook}' classification, there is a special case of _Meta-requirement_, called _Justification_ that plays this role.
 
 ==== Requirements on the project
 
@@ -147,7 +164,6 @@ TIP: If you are surprised to see _Obstacle_ but not _Rationale_, which often go 
 //----------------------------------------------
 
 
-
 ==== Document description
 
 //----------------------------------------------
@@ -158,43 +174,93 @@ TIP: If you are surprised to see _Obstacle_ but not _Rationale_, which often go 
 | {lack}      | Lack        | Property that is not in requirements but should be
 | {noise}  | Noise    | Property that is in requirements but should not be
 | {meta} | Meta-requirement      | Property of requirements themselves (not of
-project, environment, goals or system)
+project, environment, goals, or system)
 |=== 
 //----------------------------------------------
 
 [[structure]]
-== Overall structure
+== Standard plan for requirements
 
-.The four books of requirements
+The proposed plan for requirements specification intends to update the ISO/IEC/IEEE 29148:2011 standard and address modern projects' needs.
+
+Depending on the tooling associated with requirements management (database, spreadsheets, textual documentation, dedicated tools), the principles described in this chapter will remain.
+
+[#4pegs]
+.The four PEGS
 image::classification.svg[]
-
-NOTE: This structure can influence the organization of a document in books. It can also be lead to requirements packages (e.g., in <<templates, SysML>>) or folders (e.g., in a spreadsheet).
+As illustrated by <<4pegs>>, requirements are organized into four main parts.
+These parts can become packages, folders, chapters, or databases.
+In the remaining description, we will consider dealing with a textual document such as Google Doc, for example.
 
 === The four pegs
 
-TIP: Front and back matters...
+=== Metadata
+
+Each organization will have its specific additional information.
+In {Method}, only front and back matters are used to illustrate such additional components.
+
 
 === Goals
 
-==== G.1 Overall context and goals
+The Goals book describes the needs of the target organization, which the system to be developed will address.
+It is composed of seven chapters.
 
-==== G.2 Current situation
+G.1 Overall context and goals:: 
+A general introduction that explains why the project is needed, recalls the business context, and presents the general business objectives. 
 
-==== G.3 Expected benefits 
+G.2 Current situation::
+The current situation, justifying further why the project is needed.
 
-==== G.4 Functionality overview
+G.3 Expected benefits::
+The business benefits expected from the successful execution of the project. 
++
+NOTE: This chapter is the core of the Goals book, describing what the organization expects from the system.
 
-==== G.5 High-level usage scenarios 
+G.4 Functionality overview::
+A short overview of the future system, enabling the reader to get a quick grasp of what the system will be.
 
-==== G.6 Limitations and exclusions 
+G.5 High-level usage scenarios::
+Main scenarios (use cases) that the system should cover. 
++
+TIP: The scenarios chosen for appearing here should be limited to the main usage patterns, and expressed in user terms, independently of the system’s structure. The detailed usage scenarios will appear in the System book (chapter S.4).
 
-==== G.7 Stakeholders and requirements sources
+G.6 Limitations and exclusions::
+What the system will not do. 
+
+G.7 Stakeholders and requirements sources::
+Lists of stakeholders and other requirements sources. 
++
+TIP: Stakeholders should be categories of people, rather than individuals (for example “company CEO” rather than the person’s name). To avoid forgetting any category of people whose input is relevant
+to the project, you should start from the detailed lists in “Categories
+of stakeholders” (see <<categoriesStakeholder>>).
 
 === Environment
 
+E.1 Glossary::
+E.2 Components::
+E.3 Constraints::
+E.4 Assumptions::
+E.5 Effects::
+E.6 Invariants::
+
 === Project
 
+P.1 Roles::
+P.2 Personnel characteristics and constraints::
+P.3 Imposed technical choices::
+P.4 Schedule and milestones::
+P.5 Tasks and deliverables::
+P.6 Risk and mitigation analysis::
+P.7 Requirements process and report::
+
 === System
+
+S.1 Components::
+S.2 Functionality::
+S.3 Interfaces::
+S.4 Scenarios (use cases, user stories)::
+S.5 Prioritization::
+S.6 Verification and acceptance criteria::
 
 == Links between the four PEGS
 

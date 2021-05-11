@@ -5,7 +5,10 @@
 :toc:
 :numbered:
 
-:method: _Method_
+:method: pass:[<b>PEGS</b>]
+ifdef::pdf-backend[]
+:method: PEGS
+endif::[]
 :hb-pdf: http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf
 :hb-title: Handbook of requirements and business analysis
 :hb-url: http://requirements-handbook.org/

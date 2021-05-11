@@ -188,6 +188,12 @@ FORM-L::
 RSML::
 - Florian could integrate the {method} in the editor
 
+[appendix]
+//-------------------------------------
+[[categoriesStakeholder]]
+=== Categories of stakeholder
+
+(or leave {Handbook} page 32 refs)...
 
 [appendix]
 //-------------------------------------

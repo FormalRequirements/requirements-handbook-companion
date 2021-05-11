@@ -1,8 +1,0 @@
-
-FILE: overview.adoc
-[✓] https://gist.github.com/rxaviers/7360908
-[✓] http://se.ethz.ch/~meyer/down/requirements_handbook/REQUIREMENTS.pdf
-[/] http://requirements-handbook.org/
-[✓] https://docs.google.com/document/d/1HrWCRzyW_iTf1QXFFzEoDvvc66IzMCDb3uXGS5GRWz8/edit?usp=sharing
-
-4 links checked.
